@@ -1,11 +1,11 @@
-import { Button } from "./components/Button"
+import { Header } from "./components/header"
 
 function App() {
 
   return (
     <>
-   <h1 className="text-brand-red">Solta Move</h1>
-   <Button title={"Experimente por 15 dias"} link="ssdfd" />
+   <Header/>
+
    </>
   )
 }
