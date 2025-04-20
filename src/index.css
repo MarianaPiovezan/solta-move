@@ -29,9 +29,9 @@ body{
   font-family: 'Archivo', sans-serif;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .container-margin {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
   }
