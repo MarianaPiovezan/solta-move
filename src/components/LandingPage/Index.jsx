@@ -34,6 +34,7 @@ export const Hero = () => {
             alt="Mulher sorrindo praticando exercício"
             className="w-full max-w-sm lg:max-w-lg -lg-12 lg:-mb-16"
             loading="eager"
+            
           />
         </div>
       </div>
