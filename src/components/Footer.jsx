@@ -7,7 +7,7 @@ export const Footer = () => {
     return (
       <footer className="bg-brand-blue-light text-brand-dark px-4 md:px-12 py-8 flex flex-col gap-6 relative overflow-hidden">
         {/* Aviso */}
-        <p className="text-xs md:text-sm max-w-xl">
+        <p className="text-xs text-center md:text-sm container-margin border-b-2 border-brand-light pb-4 ">
           Consulte o seu médico e siga todas as instruções de segurança antes de iniciar qualquer tipo de exercício, especialmente se você estiver grávida, amamentando, tem qualquer cuidado médico ou está tomando qualquer tipo de medicamento.
         </p>
   
