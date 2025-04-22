@@ -1,6 +1,7 @@
 import { BtnWatsapp } from "./components/BtnWhatsapp"
 import { Footer } from "./components/Footer"
 import { Header } from "./components/header"
+import { Activities } from "./components/LandingPage/Activities"
 import { Goals } from "./components/LandingPage/Goals"
 import { Hero } from "./components/LandingPage/Index"
 import { Testimonials } from "./components/LandingPage/Testimonials"
@@ -16,6 +17,7 @@ function App() {
    <Welcome/>
    <Testimonials/>
    <Goals/>
+   <Activities/>
    <Footer/>
 
    </>
