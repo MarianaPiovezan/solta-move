@@ -50,7 +50,7 @@ export const Goals = () => {
         {goals.map((item, index) => (
           <figure key={index}>
             <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100 relative">
-              <h3 className="font-extrabold text-base md:text-lg leading-none absolute top-4 left-4 w-[200px]">
+              <h3 className="font-extrabold text-sm md:text-base lg:text-lg leading-none absolute top-4 left-4 w-[100px] md:w-[150px] lg:w-[200px]">
                 {item.title}
               </h3>
               <img
@@ -85,10 +85,10 @@ export const Goals = () => {
           }}
           breakpoints={{
             520: {
-              slidesPerView: 2,
+              slidesPerView: 2.5,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 2.5,
             },
             1200: {
               slidesPerView: 4,
@@ -102,7 +102,7 @@ export const Goals = () => {
             >
               <figure>
                 <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100 relative">
-                  <h3 className="font-extrabold text-base md:text-lg leading-none absolute top-4 left-4 w-[200px]">
+                  <h3 className="font-extrabold text-sm md:text-base lg:text-lg leading-none absolute top-4 left-4 w-[100px] md:w-[150px] lg:w-[200px]">
                     {item.title}
                   </h3>
                   <img
