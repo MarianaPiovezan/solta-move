@@ -7,7 +7,7 @@ export const Testimonials = () => {
     <section
       id="testimonials"
       aria-label="Depoimentos de alunas"
-      className="overflow-hidden py-16 "
+      className="overflow-hidden pt-16 "
     >
       <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-8">
         <h2 className="text-3xl md:text-5xl font-extrabold ">
