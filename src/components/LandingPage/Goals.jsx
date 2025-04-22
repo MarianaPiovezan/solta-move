@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { goals } from "../../data/goals";
 import moldura from "../../assets/images/moldura-smartphone.webp";
 import gif from "../../assets/images/perguntas-calendário-de-treino.gif";
+import imagem from "../../assets/images/mulher-alongamento.webp";
 
 export const Goals = () => {
   return (
@@ -50,9 +51,9 @@ export const Goals = () => {
         {goals.map((item, index) => (
           <figure key={index}>
             <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100 relative">
-              <h3 className="font-extrabold text-sm md:text-base lg:text-lg leading-none absolute top-4 left-4 w-[100px] md:w-[150px] lg:w-[200px]">
+              <h4 className="font-extrabold text-sm md:text-base lg:text-lg leading-none absolute top-4 left-4 w-[100px] md:w-[150px] lg:w-[200px]">
                 {item.title}
-              </h3>
+              </h4>
               <img
                 className="w-full"
                 src={item.image}
@@ -134,6 +135,13 @@ export const Goals = () => {
             tabIndex={0}
           />
         </div>
+      </div>
+      <div className="text-3xl md:text-5xl font-extrabold text-brand-dark flex flex-col md:flex-row items-center  container-margin justify-between pt-16 px-6 ">
+        <h3 className="self-start md:self-center leading-none">Para o <br/>
+        corpo todo</h3>
+        <img src={imagem} className="sm:w-[70%] md:w-[50%] md:-ml-[8%]" alt="Mulher se alongando" />
+        <h3 className="self-end md:self-center leading-none text-right md:text-left">e todos <br/>
+        os corpos</h3>
       </div>
     </section>
   );
