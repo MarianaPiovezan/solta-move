@@ -13,16 +13,16 @@ export const Testimonials = () => {
         <h2 className="text-3xl md:text-5xl font-extrabold ">
           Resultados que vão muito além do espelho
         </h2>
-        <p className="text-base md:text-lg text-brand-gray-700">
+        <p className="text-lg md:text-xl text-brand-gray-700">
           Não é sobre um antes/depois. É sobre estar pronta para viver o agora,
           como se não houvesse amanhã.
         </p>
       </div>
-      <div className="w-full h-auto  ml-6 lg:ml-[10%] relative">
+      <div className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible">
         <Swiper
-          className="mb-12 sm:block"
+          className="mb-12 sm:block !overflow-visible"
           modules={[Navigation, Pagination, Autoplay]}
-          rewind={false}
+          rewind={true}
           spaceBetween={48}
           slidesPerView={1.5}
           centeredSlides={false}
@@ -45,7 +45,7 @@ export const Testimonials = () => {
               slidesPerView: 3,
             },
             1400: {
-              slidesPerView: 4,
+              slidesPerView: 3,
             },
           }}
         >
@@ -77,7 +77,7 @@ export const Testimonials = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="absolute !flex flex-row   !items-center justify-center gap-3  right-10 xl:right-[21%] ">
+        <div className="absolute !flex flex-row   !items-center justify-center gap-3  right-6 xl:right-0 !mt-4 ">
           <div
             className="swiper-button-prev !w-8 prev  !pl-1"
             role="button"

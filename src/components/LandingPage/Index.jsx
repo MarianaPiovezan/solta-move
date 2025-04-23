@@ -19,7 +19,7 @@ export const Hero = () => {
             para você mover o mundo.
           </h1>
 
-          <p className="text-base md:text-lg  text-gray-700 font-medium">
+          <p className="text-xl md:text-2xl  text-shadow-brand-dark font-medium">
             Ganhe mais força, energia e confiança. Fique pronta para viver
             momentos mais incríveis, intensos e desafiadores da sua vida.
           </p>
@@ -38,6 +38,7 @@ export const Hero = () => {
           />
         </div>
       </div>
+
     </section>
   );
 };

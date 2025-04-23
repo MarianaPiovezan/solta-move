@@ -17,7 +17,7 @@ export const Goals = () => {
           <h2 className="text-3xl md:text-5xl font-extrabold ">
             Defina seu objetivo e a gente te guia até lá.
           </h2>
-          <p className="text-base md:text-lg">
+          <p className="text-lg md:text-xl">
             <strong className="text-brand-yellow">
               Receba um calendário de treino recomendado para você.
             </strong>{" "}

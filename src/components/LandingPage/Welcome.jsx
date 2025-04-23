@@ -11,7 +11,7 @@ export const Welcome = () => {
         <h2 className="text-3xl font-extrabold">
           Bem-vinda ao fitness fora do padrão
         </h2>
-        <p className="text-base md:text-lg container-margin">
+        <p className="text-lg md:text-xl container-margin">
           Nós acreditamos que o verdadeiro poder dos exercícios está além do
           espelho. Por isso, estamos revolucionando o fitness. Não estamos aqui
           pelo “Corpo Perfeito”.

@@ -1,0 +1,188 @@
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { treinamentos, maratonas } from "../../data/classes";
+import imagem from "../../assets/images/siga-o-fluxo.webp"
+
+export const ClassShowcase = () => {
+  return (
+    <section
+      id="class-show-case"
+      aria-label="Sugestões de aulas para você experimentar"
+      className="overflow-hidden pt-12 md:pt-16 "
+    >
+      <div className="pb-12 md:pb-16">
+      <div className="flex  flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0">
+        <h2 className="text-3xl md:text-5xl lg:max-w-1/2 font-extrabold ">
+          Tem sempre uma novidade para você experimentar.
+        </h2>
+        <p className="text-lg md:text-xl text-brand-gray-700 lg:max-w-1/2">
+          Toda semana novas aulas são adicionadas na plataforma. Com novos
+          movimentos, novos desafios, novas descobertas.
+        </p>
+      </div>
+      <div id="treinamentos" className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   ">
+        <Swiper
+          className="mb-12 sm:block !overflow-visible"
+          modules={[Navigation, Pagination, Autoplay]}
+          rewind={true}
+          spaceBetween={24}
+          slidesPerView={1.5}
+          centeredSlides={false}
+          navigation={{
+            prevEl: "#treinamentos .swiper-button-prev",
+            nextEl: "#treinamentos .swiper-button-next",
+          }}
+       
+          breakpoints={{
+            520: {
+              slidesPerView: 2.5,
+           
+            },
+            768: {
+              slidesPerView: 2.5,
+           
+            },
+            1200: {
+              slidesPerView: 3,
+         
+            },
+            1400: {
+              slidesPerView: 3,
+           
+            },
+          }}
+        >
+          {treinamentos.map((item, index) => (
+            <SwiperSlide
+              key={index}
+              className="flex flex-col justify-center items-center"
+            >
+              <figure>
+                <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-1 border border-brand-gray-100  ">
+                  <img
+                    className=" aspect-video object-cover object-center"
+                    src={item.image}
+                    alt={`Foto de ${item.title}`}
+                  />
+                </div>
+               
+                <figcaption className="font-bold  pt-1  text-lg md:text-xl to-brand-dark">
+                  <p>{item.title}</p>
+                  <p className="text-brand-gray-700 font-normal leading-none">{item.subtitle}</p>
+                  <span className="text-brand-gray-700 font-normal text-sm md:text-base"></span>
+                </figcaption>
+              </figure>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="absolute !flex flex-row   !items-center justify-center gap-3  right-6 xl:right-0 !mt-4">
+          <div
+            className="swiper-button-prev !w-8 prev  !pl-1"
+            role="button"
+            aria-label="Anterior"
+            tabIndex={0}
+          />
+          <div
+            className="swiper-button-next !w-8 next  !pr-1"
+            role="button"
+            aria-label="Próximo"
+            tabIndex={0}
+          />
+        </div>
+      </div>
+      </div>
+      <div className="pb-12 md:pb-16">
+      <div className="flex  flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0">
+        <div>
+        <h3 className="text-xl md:text-2xl font-bold">Maratonas</h3>
+        <h2 className="text-3xl md:text-5xl lg:max-w-1/2 font-extrabold ">
+        Fique pronta para qualquer desafio.
+        </h2>
+        </div>
+        <p className="text-lg md:text-xl text-brand-gray-700 lg:max-w-1/2">
+        As Maratonas são combinações de treinos de até 4 semanas, estruturados <strong className="text-brand-dark"> para te ajudar a alcançar uma meta específica ou a enfrentar um desafio do momento.</strong> Está no período menstrual e quer aliviar as dores da cólica? Entendido. Precisando de confiança para aquele projeto difícil da próxima semana? Aqui também. Mais mobilidade? Ao seu dispor.
+        </p>
+      </div>
+      <div id="maratonas" className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   ">
+        <Swiper
+          className="mb-12 sm:block !overflow-visible"
+          modules={[Navigation, Pagination, Autoplay]}
+          rewind={true}
+          spaceBetween={24}
+          slidesPerView={1.5}
+          centeredSlides={false}
+          navigation={{
+            prevEl: "#maratonas .swiper-button-prev",
+            nextEl: "#maratonas .swiper-button-next",
+          }}
+       
+          breakpoints={{
+            520: {
+              slidesPerView: 2.5,
+           
+            },
+            768: {
+              slidesPerView: 2.5,
+           
+            },
+            1200: {
+              slidesPerView: 3,
+         
+            },
+            1400: {
+              slidesPerView: 3,
+           
+            },
+          }}
+        >
+          {maratonas.map((item, index) => (
+            <SwiperSlide
+              key={index}
+              className="flex flex-col justify-center items-center"
+            >
+          
+                <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-1 border border-brand-gray-100  ">
+                  <img
+                    className="w-full bg-center aspect-video "
+                    src={item.image}
+                    alt={`Maratona - ${item.title}`}
+                  />
+                </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="absolute !flex flex-row   !items-center justify-center gap-3  right-6 xl:right-0 !mt-4">
+          <div
+            className="swiper-button-prev !w-8 prev  !pl-1"
+            role="button"
+            aria-label="Anterior"
+            tabIndex={0}
+          />
+          <div
+            className="swiper-button-next !w-8 next  !pr-1"
+            role="button"
+            aria-label="Próximo"
+            tabIndex={0}
+          />
+        </div>
+      </div>
+      </div>
+      
+      <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0 py-8">
+        <div>
+   
+        <h2 className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 ">
+        Siga o fluxo. <br/> 
+Mantenha o ciclo de treino.
+        </h2>
+       
+        <p className="text-lg md:text-xl text-brand-gray-700 ">
+        <strong className="text-brand-dark">Potencialize seus resultados sincronizando seus treinos com seu ciclo menstrual. </strong>Você não é a mesma todos os dias, seu treino também não precisa ser. Na Solta Move você aprende como usar seu ciclo menstrual a seu favor e levar seu desempenho nos treinos a um outro nível. Você vai descobrir que seu ciclo menstrual é o seu aliado, não o seu inimigo.
+        </p>
+        </div>
+      
+      <img src={imagem}  alt="Imagem de uma mulher fazendo exercício sincronizado com seu ciclo mentrual" />
+      </div>
+    </section>
+  );
+};

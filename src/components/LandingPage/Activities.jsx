@@ -8,7 +8,7 @@ export const Activities = () => {
     <section
       id="activities"
       aria-label="Fique por dentro da plataforma"
-      className="overflow-hidden pt-16  "
+      className="overflow-hidden py-16  "
     >
       <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
         <h2 className="text-3xl md:text-5xl font-extrabold ">
@@ -132,37 +132,16 @@ export const Activities = () => {
         </div>
       </div>
 
-      <h3 className="text-2xl md:text-3xl container-margin pt-6 md:pt-8 font-extrabold px-6  xl:px-0">
+      <h3 className="text-2xl md:text-3xl container-margin py-6 md:py-8 font-extrabold px-6  xl:px-0">
         Você é única. <br />
         Sua maneira de se mover também.
       </h3>
-
-      <div className=" container-margin  grid-cols-4 gap-12 hidden lg:grid pt-8 px-6 xl:px-0 ">
-        {app.map((item, index) => (
-          <figure key={index}>
-            <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6   bg-brand-gray-100 relative flex items-center justify-center py-14">
-              <img
-                className="w-28"
-                src={item.image}
-                alt={` ${item.highlight}`}
-              />
-            </div>
-
-            <figcaption className="text-brand-gray-700 pt-1 mt-3 text-sm md:text-base">
-              <strong className="text-brand-dark">{item.highlight}</strong>{" "}
-              {item.part1}{" "}
-              <strong className="text-brand-dark">{item.part2}</strong>{" "}
-              {item.part3}
-            </figcaption>
-          </figure>
-        ))}
-      </div>
       <div
         id="activities-app"
-        className="w-full h-auto lg:!hidden  ml-6 lg:ml-[10%] relative mt-8"
+        className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible"
       >
         <Swiper
-          className="mb-12 sm:block"
+          className="mb-12 sm:block !overflow-hidden"
           modules={[Navigation, Pagination, Autoplay]}
           rewind={false}
           spaceBetween={48}
@@ -212,17 +191,17 @@ export const Activities = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="absolute !flex flex-row   !items-center justify-center gap-3  right-10 xl:right-[21%] ">
+        <div className="absolute !flex flex-row   !items-center justify-center gap-3  right-6 xl:right-0 !mt-4">
           <div
             className="swiper-button-prev !w-8 prev  !pl-1"
             role="button"
-            aria-label="Depoimento anterior"
+            aria-label="Anterior"
             tabIndex={0}
           />
           <div
             className="swiper-button-next !w-8 next  !pr-1"
             role="button"
-            aria-label="Próximo depoimento"
+            aria-label="Próximo"
             tabIndex={0}
           />
         </div>
