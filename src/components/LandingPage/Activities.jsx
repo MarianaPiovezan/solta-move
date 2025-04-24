@@ -141,7 +141,7 @@ export const Activities = () => {
         className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible"
       >
         <Swiper
-          className="mb-12 sm:block !overflow-hidden"
+          className="mb-12 sm:block !overflow-visible"
           modules={[Navigation, Pagination, Autoplay]}
           rewind={false}
           spaceBetween={24}

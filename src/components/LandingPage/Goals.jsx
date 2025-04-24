@@ -47,30 +47,10 @@ export const Goals = () => {
         Comece sua Jornada. Entregue tudo.
       </h3>
 
-      <div className=" container-margin  grid-cols-3 gap-12 hidden lg:grid pt-8 px-6 xl:px-0 ">
-        {goals.map((item, index) => (
-          <figure key={index}>
-            <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100 relative">
-              <h4 className="font-extrabold text-sm md:text-base lg:text-lg leading-none absolute top-4 left-4 w-[100px] md:w-[150px] lg:w-[200px]">
-                {item.title}
-              </h4>
-              <img
-                className="w-full"
-                src={item.image}
-                alt={`Foto de ${item.name}`}
-              />
-            </div>
-
-            <figcaption className="text-brand-gray-700 pt-1 mt-3 text-sm md:text-base">
-              <strong className="text-brand-dark">{item.highlight}</strong>{" "}
-              {item.description}
-            </figcaption>
-          </figure>
-        ))}
-      </div>
-      <div className="w-full h-auto lg:!hidden  ml-6 lg:ml-[10%] relative mt-8">
+  
+      <div className="container-margin h-auto px-6 xl:px-0 pt-6 md:pt-8    relative  mx-auto  pr-0 overflow-visible">
         <Swiper
-          className="mb-12 sm:block"
+          className="mb-12 sm:block overflow-visible"
           modules={[Navigation, Pagination, Autoplay]}
           rewind={false}
           spaceBetween={24}
