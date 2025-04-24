@@ -50,7 +50,7 @@ export const Goals = () => {
   
       <div className="container-margin h-auto px-6 xl:px-0 pt-6 md:pt-8    relative  mx-auto  pr-0 overflow-visible">
         <Swiper
-          className="mb-12 sm:block overflow-visible"
+          className="mb-12 sm:block !overflow-visible"
           modules={[Navigation, Pagination, Autoplay]}
           rewind={false}
           spaceBetween={24}
