@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <Menu/>
+   <Menu/>
    <BtnWatsapp/>
    <Hero/>
    <Welcome/>
