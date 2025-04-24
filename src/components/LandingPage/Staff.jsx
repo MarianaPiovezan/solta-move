@@ -14,7 +14,7 @@ export const GroupStars = () => {
   )
 }
 
-export const Trainers = () => {
+export const Staff = () => {
 
   return (
     <section
