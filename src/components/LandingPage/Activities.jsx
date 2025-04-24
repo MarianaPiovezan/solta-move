@@ -8,7 +8,7 @@ export const Activities = () => {
     <section
       id="activities"
       aria-label="Fique por dentro da plataforma"
-      className="overflow-hidden py-16  "
+      className="overflow-hidden py-12 md:py-16  "
     >
       <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
         <h2 className="text-3xl md:text-5xl font-extrabold ">

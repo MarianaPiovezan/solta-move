@@ -10,7 +10,7 @@ export const Goals = () => {
     <section
       id="goals"
       aria-label="Depoimentos de alunas"
-      className="overflow-hidden pt-16  "
+      className="overflow-hidden pt-12 md:pt-16  "
     >
       <div className="flex flex-col lg:flex-row px-6 gap-6 lg:gap-16 justify-center items-center   mx-6 mb-8 bg-brand-dark rounded-2xl md:rounded-3xl container-margin   text-brand-light pt-8 md:px-24 ">
         <div className="flex flex-col gap-6 md:gap-8 max-w-[533px] py-10">
