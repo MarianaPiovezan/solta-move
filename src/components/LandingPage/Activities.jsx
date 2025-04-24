@@ -16,7 +16,7 @@ export const Activities = () => {
         </h2>
       </div>
       <div className="container-margin px-6 xl:px-0 flex flex-col md:flex-row gap-8 h-full items-stretch">
-        <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-gray-700 text-lg md:text-xl  md:w-1/2 ">
+        <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-gray-800 text-lg md:text-xl  md:w-1/2 ">
           <p>
             {" "}
             <strong className="text-brand-dark">

@@ -13,7 +13,7 @@ export const Goals = () => {
       className="overflow-hidden pt-12 md:pt-16  "
     >
       <div className="flex flex-col lg:flex-row px-6 gap-6 lg:gap-16 justify-center items-center   mx-6 mb-8 bg-brand-dark rounded-2xl md:rounded-3xl container-margin   text-brand-light pt-8 md:px-24 ">
-        <div className="flex flex-col gap-6 md:gap-8 max-w-[533px] py-10">
+        <div className="flex flex-col gap-6 md:gap-8 max-w-[533px] p-0 md:py-10">
           <h2 className="text-3xl md:text-5xl font-extrabold ">
             Defina seu objetivo e a gente te guia até lá.
           </h2>
@@ -121,7 +121,7 @@ export const Goals = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="absolute !flex flex-row   !items-center justify-center gap-3  right-10 xl:right-[21%] ">
+        <div className="absolute !flex flex-row   !items-center justify-center gap-3  right-6 xl:right-0 !mt-4 ">
           <div
             className="swiper-button-prev !w-8 prev  !pl-1"
             role="button"

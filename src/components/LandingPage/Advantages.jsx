@@ -40,7 +40,7 @@ export const Advantages = () => {
         <h3 className="font-extrabold flex items-center border-b-2 border-brand-blue-light pb-1">
           + {item.title}
         </h3>
-        <p className="text-brand-gray-700 text-sm md:text-base font-normal leading-none">
+        <p className="text-brand-gray-800 text-sm md:text-base font-normal leading-none">
           {item.content}
         </p>
       </div>

@@ -29,7 +29,7 @@ export const Staff = () => {
       </div>
       <div className="container-margin px-6 xl:px-0 flex flex-col md:flex-row gap-8  items-stretch">
         <div className="flex flex-col gap-6 md:gap-8 md:w-1/2">
-          <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-gray-700 text-lg md:text-xl   ">
+          <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-gray-800 text-lg md:text-xl   ">
             <p>
               Não precisa nem levantar a mão. Nosso time de levantamento de
               humor é responsável por te dar toda atenção e cuidado que você
@@ -47,8 +47,8 @@ export const Staff = () => {
           </div>
         </div>
         <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-dark  md:text-lg  font-bold md:w-1/2 grid grid-cols-2 gap-6 ">
-            { trainers.map( item => (
-              <figure className="flex flex-col items-center gap-1"> <div className="overflow-hidden rounded-2xl h-[150px]" ><img src={item.image} alt={item.name}/></div>  <figcaption>{item.name}</figcaption></figure>
+            { trainers.map( (item, index) => (
+              <figure key={index} className="flex flex-col items-center gap-1"> <div className="overflow-hidden rounded-2xl h-[150px]" ><img src={item.image} alt={item.name}/></div>  <figcaption>{item.name}</figcaption></figure>
             ))}
           </div>
       </div>
