@@ -1,5 +1,4 @@
 import { BtnWatsapp } from "./components/BtnWhatsapp"
-// import { Header } from "./components/header"
 import { Footer } from "./components/Footer"
 import { Activities } from "./components/LandingPage/Activities"
 import { Advantages } from "./components/LandingPage/Advantages"
