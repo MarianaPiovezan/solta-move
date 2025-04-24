@@ -1,4 +1,5 @@
 import { BtnWatsapp } from "./components/BtnWhatsapp"
+import { Menu } from "./components/Menu"
 import { Footer } from "./components/Footer"
 import { Activities } from "./components/LandingPage/Activities"
 import { Advantages } from "./components/LandingPage/Advantages"
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+    <Menu/>
    <BtnWatsapp/>
    <Hero/>
    <Welcome/>
