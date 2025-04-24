@@ -73,7 +73,7 @@ export const Goals = () => {
           className="mb-12 sm:block"
           modules={[Navigation, Pagination, Autoplay]}
           rewind={false}
-          spaceBetween={48}
+          spaceBetween={24}
           slidesPerView={1.5}
           centeredSlides={false}
           navigation={{
@@ -89,10 +89,16 @@ export const Goals = () => {
               slidesPerView: 2.5,
             },
             768: {
-              slidesPerView: 2.5,
+              slidesPerView: 2,
+              spaceBetween: 48
             },
             1200: {
-              slidesPerView: 4,
+              slidesPerView: 3,
+              spaceBetween: 48
+            },
+            1400: {
+              slidesPerView: 3,
+              spaceBetween: 48
             },
           }}
         >

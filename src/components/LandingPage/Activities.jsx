@@ -144,7 +144,7 @@ export const Activities = () => {
           className="mb-12 sm:block !overflow-hidden"
           modules={[Navigation, Pagination, Autoplay]}
           rewind={false}
-          spaceBetween={48}
+          spaceBetween={24}
           slidesPerView={1.5}
           centeredSlides={false}
           navigation={{
@@ -161,9 +161,11 @@ export const Activities = () => {
             },
             768: {
               slidesPerView: 2.5,
+              spaceBetween:48
             },
             1200: {
               slidesPerView: 4,
+              spaceBetween:48
             },
           }}
         >

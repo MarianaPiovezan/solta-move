@@ -23,7 +23,7 @@ export const Testimonials = () => {
           className="mb-12 sm:block !overflow-visible"
           modules={[Navigation, Pagination, Autoplay]}
           rewind={true}
-          spaceBetween={48}
+          spaceBetween={24}
           slidesPerView={1.5}
           centeredSlides={false}
           navigation={{
@@ -39,13 +39,16 @@ export const Testimonials = () => {
               slidesPerView: 2,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 2.5,
+              spaceBetween: 48
             },
             1200: {
               slidesPerView: 3,
+              spaceBetween: 48
             },
             1400: {
               slidesPerView: 3,
+              spaceBetween: 48
             },
           }}
         >

@@ -37,7 +37,7 @@ export const advantages = [
     {
       title:
       'Flexibilidade',
-      content: " para subir as escadas, para amarrar o tênis sem sofrimento, para alcançar o que você quiser.",
+      content: "para subir as escadas, para amarrar o tênis sem sofrimento, para alcançar o que você quiser.",
     },
   
 

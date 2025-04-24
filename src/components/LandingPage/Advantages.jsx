@@ -30,7 +30,7 @@ export const Advantages = () => {
   {/* Cards que aparecem SOBRE a imagem */}
   <div
     id="treinamentos"
-    className="absolute top-0 z-10 w-full container-margin grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 px-6 xl:px-0 gap-6 !max-w-[1038px] mx-auto pr-0 items-stretch md:pt-48 left-[50%] -translate-x-[50%]"
+    className="absolute top-0 z-10 w-full container-margin grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 px-6 xl:px-0 gap-6 !max-w-[1038px] mx-auto  items-stretch md:pt-48 left-[50%] -translate-x-[50%]"
   >
     {advantages.map((item, index) => (
       <div
@@ -40,7 +40,7 @@ export const Advantages = () => {
         <h3 className="font-extrabold flex items-center border-b-2 border-brand-blue-light pb-1">
           + {item.title}
         </h3>
-        <p className="text-brand-gray-800 text-sm md:text-base font-normal leading-none">
+        <p className="text-brand-gray-800 text-sm md:text-base font-normal leading-4  md:leading-5">
           {item.content}
         </p>
       </div>
@@ -49,7 +49,7 @@ export const Advantages = () => {
 </div>
       </div>
 
-      <blockquote className="max-w-[650px] text-center mx-auto text-lg md:text-xl text-brand-gray-700 px-6 md:px-0">
+      <blockquote className="max-w-[650px] text-center mx-auto text-lg md:text-xl text-brand-gray-700 px-6 md:px-0 pt-10">
       Não importa se seu objetivo é ter mais saúde para fazer as tarefas do dia a dia sem sofrimento, para se tornar uma velhinha independente ou se é para fazer coisas que parecem impossíveis, <strong className="text-brand-dark">a Solta Move será sua aliada durante toda a jornada.</strong> 
       </blockquote>
     </section>
