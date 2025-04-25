@@ -30,8 +30,8 @@ export const Staff = () => {
         </h2>
       </div>
       <div className="container-margin px-6 xl:px-0 flex flex-col md:flex-row gap-8  items-stretch">
-        <div className="flex flex-col gap-6 md:gap-8 md:w-1/2">
-          <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-gray-800 text-lg md:text-xl   ">
+        <div className="flex flex-col gap-6 md:gap-8 md:w-1/2 items-stretch">
+          <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-gray-800 text-lg md:text-xl  self-stretch  h-full">
             <p>
               Não precisa nem levantar a mão. Nosso time de levantamento de
               humor é responsável por te dar toda atenção e cuidado que você
@@ -41,16 +41,16 @@ export const Staff = () => {
               </strong>{" "}
             </p>
           </div>
-          <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-dark   font-extrabold text-lg md:text-xl gap-1 flex flex-col">
+          <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-dark   font-extrabold text-lg md:text-xl gap-1 flex flex-col self-stretch ">
           <div className="flex justify-between  "> <p>Acolhimento</p> <GroupStars/> </div>
           <div className="flex justify-between  "> <p>Energia</p> <GroupStars/> </div>
           <div className="flex justify-between  "> <p>Motivação</p> <GroupStars/> </div>
           
           </div>
         </div>
-        <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-dark  md:text-lg  font-bold md:w-1/2 grid grid-cols-2 gap-6 ">
+        <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-dark  md:text-lg  font-bold md:w-1/2 grid grid-cols-2 gap-6 text-center ">
             { trainers.map( (item, index) => (
-              <figure key={index} className="flex flex-col items-center gap-1"> <div className="overflow-hidden rounded-2xl h-[150px]" ><img src={item.image} alt={item.name}/></div>  <figcaption>{item.name}</figcaption></figure>
+              <figure key={index} className="flex flex-col items-center gap-1"> <div className="overflow-hidden rounded-2xl aspect-9/7" ><img src={item.image} alt={item.name}/></div>  <figcaption className="text-sm md:text-base leading-none font-bold pt-1 max-w-[90px] md:max-w-[300px] ">{item.name}</figcaption></figure>
             ))}
           </div>
       </div>
