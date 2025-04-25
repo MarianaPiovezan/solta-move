@@ -8,10 +8,10 @@ export const Menu = () => {
         <img className="w-12 md:w-16 " src={logo} alt="Solta Move" />
         <ul className="flex gap-3 md:gap-8 items-center">
           <li>
-            <Button title={"Experimente por 15 dias"} link="ssdfd" primary={false} />
+            <Button title={"Experimente por 15 dias"} link="#sale" primary={false} />
           </li>
           <li className=" hover:border-brand-yellow ease-linear duration-300 border-b-2 border-brand-dark">
-            <a href="">Entrar</a>
+            <a href="https://plataforma.soltamove.com.br/login">Entrar</a>
           </li>
         </ul>
       </nav>

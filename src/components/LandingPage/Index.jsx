@@ -24,7 +24,7 @@ export const Hero = () => {
             momentos mais incríveis, intensos e desafiadores da sua vida.
           </p>
 
-          <Button title={"Experimente por 15 dias"} link="" />
+          <Button title={"Experimente por 15 dias"} link="#sale" />
         </div>
 
         {/* Imagem do lado direito */}

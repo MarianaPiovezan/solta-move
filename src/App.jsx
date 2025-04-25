@@ -8,6 +8,7 @@ import { Goals } from "./components/LandingPage/Goals"
 import { Hero } from "./components/LandingPage/Index"
 import { Testimonials } from "./components/LandingPage/Testimonials"
 import { Staff } from "./components/LandingPage/Staff"
+import { Sale } from "./components/LandingPage/Sale"
 import { Welcome } from "./components/LandingPage/Welcome"
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
    <ClassShowcase/>
    <Advantages/>
    <Staff/>
+   <Sale/>
    <Footer/>
 
    </>
