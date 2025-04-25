@@ -141,7 +141,7 @@ export const Staff = () => {
 
 
       </div>
-        <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8  md:pb-8 container-margin px-6 xl:px-0 pb-12 md:pb-16">
+        <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8   container-margin px-6 xl:px-0  ">
               <div>
          
               <h2 className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 ">

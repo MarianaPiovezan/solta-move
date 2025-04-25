@@ -9,6 +9,7 @@ import { Hero } from "./components/LandingPage/Index"
 import { Testimonials } from "./components/LandingPage/Testimonials"
 import { Staff } from "./components/LandingPage/Staff"
 import { Sale } from "./components/LandingPage/Sale"
+import {Faq} from "./components/LandingPage/Faq"
 import { Welcome } from "./components/LandingPage/Welcome"
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
    <Advantages/>
    <Staff/>
    <Sale/>
+   <Faq/>
    <Footer/>
 
    </>

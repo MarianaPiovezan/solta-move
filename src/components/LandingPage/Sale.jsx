@@ -2,8 +2,8 @@ import { sale } from "../../data/sale";
 import { CardSale } from "../CardSale";
 import selo from "../../assets/images/selo-garantia.webp";
 import imagem from "../../assets/images/plataforma-solta.webp";
-import imagemDispositivoDesktop from "../../assets/images/dispositivos-plataforma-solta-desktop.webp"
-import imagemDispositivoMobile from "../../assets/images/dispositivos-plataforma-solta-mobile.webp"
+import imagemDispositivoDesktop from "../../assets/images/dispositivos-plataforma-solta-desktop.webp";
+import imagemDispositivoMobile from "../../assets/images/dispositivos-plataforma-solta-mobile.webp";
 export const Sale = () => {
   return (
     <section
@@ -64,15 +64,41 @@ export const Sale = () => {
             alt="Todos os serviços que podem ser adiquiridos ao "
           />
         </div>
-       
       </div>
-      <div className="container-margin py-16 flex items-center flex-col gap-6  px-6 xl:px-0">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-center ">
+      <div className="container-margin pt-12 md:pt-16 flex items-center flex-col gap-6  px-6 xl:px-0">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center ">
           Treine no seu dispositivo favorito.
-          </h2>
-          <img src={imagemDispositivoDesktop} alt="Plataforma solta em diversos dispositivos" className="w-[80%] lg:w-[90%] hidden md:block" />
-          <img src={imagemDispositivoMobile} alt="Plataforma solta em diversos dispositivos" className="w-full block md:hidden" />
+        </h2>
+        <img
+          src={imagemDispositivoDesktop}
+          alt="Plataforma solta em diversos dispositivos"
+          className="w-[80%] lg:w-[90%] hidden md:block"
+        />
+        <img
+          src={imagemDispositivoMobile}
+          alt="Plataforma solta em diversos dispositivos"
+          className="w-full block md:hidden"
+        />
+      </div>
+      <div className=" py-12 md:py-16 px-6 xl:px-0 max-w-2xl mx-auto flex flex-col items-center gap-2">
+        <div className="mx-auto bg-brand-gray-100  rounded-2xl md:rounded-3xl p-12  gap-8 flex flex-col">
+          <h3 className="text-3xl md:text-5xl font-extrabold text-center ">
+            Uma Move a Outra.
+          </h3>
+          <p className="text-lg md:text-xl text-brand-gray-800 text-center">
+            Mulheres que ganham até 2 salários mínimos são as que menos praticam
+            atividade física no Brasil*.{" "}
+            <strong className="text-brand-dark font-bold ">
+              {" "}
+              Ao assinar nossa plataforma você contribui para que outra mulher
+              tenha acesso aos nossos treinos.{" "}
+            </strong>
+          </p>
         </div>
+        <p className="text-sm text-brand-gray-700 mx-auto">
+          *Fonte: Datafolha Instituto de Pesquisas
+        </p>
+      </div>
     </section>
   );
 };
