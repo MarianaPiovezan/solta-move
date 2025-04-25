@@ -2,6 +2,8 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { trainers, contents } from "../../data/trainers";
 import estrela from "../../assets/images/icons/star.svg"
+import video from "../../assets/images/ola-treinos-divertidos.mp4"
+import imagem from "../../assets/images/vida-saudavel-sauda-voce.webp"
 
 
 export const GroupStars = () => {
@@ -100,7 +102,7 @@ export const Staff = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="absolute !flex flex-row   !items-center justify-center gap-3  right-6 xl:right-0 !mt-4">
+        <div className="absolute !flex flex-row !items-center justify-center gap-3  right-6 xl:right-0 !mt-4">
           <div
             className="swiper-button-prev !w-8 prev  !pl-1"
             role="button"
@@ -115,6 +117,44 @@ export const Staff = () => {
           />
         </div>
       </div>
+      <div className="py-12 md:py-16">
+      <div className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
+        <h2 className="text-3xl md:text-5xl font-extrabold ">
+        Adeus, Treinos punitivos. <br/>
+        Olá, treinos divertidos.
+        </h2>
+        <p className="text-lg md:text-xl text-brand-gray-700">
+        Fazer exercício na força do ódio, é coisa do passado. A Solta Move está aqui pra te convidar a descobrir uma nova maneira de se movimentar. De forma gentil, divertida e eficiente. Sem peso na consciência.
+        </p>
+      </div>
+      <video
+  src={video} // ou use o import se estiver na pasta src
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="w-full h-auto"
+>
+  Seu navegador não suporta vídeo HTML5.
+</video>
+
+
+
+      </div>
+        <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8  md:pb-8 container-margin px-6 xl:px-0 pb-12 md:pb-16">
+              <div>
+         
+              <h2 className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 ">
+              Sua vida saudável saúda você.
+              </h2>
+             
+              <p className="text-lg md:text-xl text-brand-gray-700 ">
+              No passeio em família, na realização de um sonho ou quando toca sua música preferida na festa para você descer até o chão. A última coisa que você quer é não estar com a saúde em dia para aproveitar ao máximo esses momentos. Por isso, a Solta Move te prepara para uma vida, onde não falte saúde para viver os momentos mais incríveis e intensos da sua vida. <strong className="text-brand-dark">Bem-vinda a uma vida saudávilhosa. </strong>
+              </p>
+              </div>
+            
+            <img src={imagem} className="w-[80%] justify-self-center " alt="Imagem de uma mulher se divertindo" />
+            </div>
     </section>
   );
 };
