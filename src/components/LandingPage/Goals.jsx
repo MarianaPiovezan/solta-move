@@ -1,9 +1,9 @@
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { goals } from "../../data/goals";
-import moldura from "../../assets/images/moldura-smartphone.webp";
-import gif from "../../assets/images/perguntas-calendário-de-treino.gif";
-import imagem from "../../assets/images/mulher-alongamento.webp";
+import moldura from "/assets/images/moldura-smartphone.webp";
+import gif from "/assets/images/perguntas-calendário-de-treino.gif";
+import imagem from "/assets/images/mulher-alongamento.webp";
 
 export const Goals = () => {
   return (
@@ -33,12 +33,14 @@ export const Goals = () => {
             src={gif}
             alt="Tela de exemplo do aplicativo com opções de objetivo"
             className="relative w-[55%] max-w-[350px]  -bottom-0 left-1/2 -translate-x-1/2 "
+            loading="lazy"
           />
           <img
             src={moldura}
             alt=""
             aria-hidden="true"
             className="absolute bottom-0 left-1/2 w-[65%] max-w-[350px] -translate-x-1/2 z-30"
+            loading="lazy"
           />
         </div>
       </div>
@@ -96,6 +98,7 @@ export const Goals = () => {
                     className="w-full"
                     src={item.image}
                     alt={`Foto de ${item.name}`}
+                    loading="lazy"
                   />
                 </div>
 
@@ -125,7 +128,7 @@ export const Goals = () => {
       <div className="text-3xl md:text-5xl font-extrabold text-brand-dark flex flex-col md:flex-row items-center  container-margin justify-between pt-16 px-6 ">
         <h3 className="self-start md:self-center leading-none">Para o <br/>
         corpo todo</h3>
-        <img src={imagem} className="sm:w-[70%] md:w-[50%] md:-ml-[8%]" alt="Mulher se alongando" />
+        <img src={imagem} className="sm:w-[70%] md:w-[50%] md:-ml-[8%]" alt="Mulher se alongando" loading="lazy" />
         <h3 className="self-end md:self-center leading-none text-right md:text-left">e todos <br/>
         os corpos</h3>
       </div>

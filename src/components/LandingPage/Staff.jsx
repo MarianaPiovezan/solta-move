@@ -1,16 +1,16 @@
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { trainers, contents } from "../../data/trainers";
-import estrela from "../../assets/images/icons/star.svg"
-import video from "../../assets/images/ola-treinos-divertidos.mp4"
-import imagem from "../../assets/images/vida-saudavel-sauda-voce.webp"
+import estrela from "/assets/images/icons/star.svg"
+import video from "/assets/images/ola-treinos-divertidos.mp4"
+import imagem from "/assets/images/vida-saudavel-sauda-voce.webp"
 
 
 export const GroupStars = () => {
   return (
     <div className="flex gap-2">
       { [1,2,3,4,5].map( index => (
-        <img className="w-5" key={index} src={estrela} alt="estrela"/>
+        <img className="w-5" key={index} src={estrela} alt="estrela" loading="lazy"/>
       ))}
     </div>
   )
@@ -153,7 +153,7 @@ export const Staff = () => {
               </p>
               </div>
             
-            <img src={imagem} className="w-[80%] justify-self-center " alt="Imagem de uma mulher se divertindo" />
+            <img src={imagem} className="w-[80%] justify-self-center " loading="lazy" alt="Imagem de uma mulher se divertindo" />
             </div>
     </section>
   );

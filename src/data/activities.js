@@ -1,65 +1,65 @@
 export const activities1 = [
     {
-      image: "/assets/images/activities/alongamento.webp",
+      image: "/assets/images/atividades/alongamento.webp",
       title:
         'Alongamento',
     },
     {
-      image: "/assets/images/activities/cardio.webp",
+      image: "/assets/images/atividades/cardio.webp",
       title:
         'Cardio',
     },
     {
-      image: "/assets/images/activities/funcional.webp",
+      image: "/assets/images/atividades/funcional.webp",
       title:
         'Funcional',
     },
     {
-      image: "/assets/images/activities/danca.webp",
+      image: "/assets/images/atividades/danca.webp",
       title:
         'Dança',
     },
     {
-      image: "/assets/images/activities/core.webp",
+      image: "/assets/images/atividades/core.webp",
       title:
         'Core',
     },
     {
-      image: "/assets/images/activities/mobilidade.webp",
+      image: "/assets/images/atividades/mobilidade.webp",
       title:
         'Mobilidade',
     },
   
   ];
 
-  export const activities2 = [
+  export const  activities2 = [
     {
-      image: "/assets/images/activities/meditacao.webp",
+      image: "/assets/images/atividades/meditacao.webp",
       title:
         'Meditação',
     },
     {
-      image: "/assets/images/activities/caminhada.webp",
+      image: "/assets/images/atividades/caminhada.webp",
       title:
         'Caminhada em Casa',
     },
     {
-      image: "/assets/images/activities/yoga.webp",
+      image: "/assets/images/atividades/yoga.webp",
       title:
         'Yoga',
     },
     {
-      image: "/assets/images/activities/hiit.webp",
+      image: "/assets/images/atividades/hiit.webp",
       title:
         'HIIT',
     },
     {
-      image: "/assets/images/activities/kickboxing.webp",
+      image: "/assets/images/atividades/kickboxing.webp",
       title:
         'Kickboxing',
     },
     {
-      image: "/assets/images/activities/musculacao.webp",
+      image: "/assets/images/atividades/musculacao.webp",
       title:
         'Musculação',
     },

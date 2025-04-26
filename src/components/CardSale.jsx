@@ -1,6 +1,6 @@
-import iconSelo from "../assets/images/icons/selo-garantia.svg";
-import iconCartao from "../assets/images/icons/cartao-credito.svg";
-import iconRenovacao from "../assets/images/icons/renovacao-automatica.svg";
+import iconSelo from "/assets/images/icons/selo-garantia.svg";
+import iconCartao from "/assets/images/icons/cartao-credito.svg";
+import iconRenovacao from "/assets/images/icons/renovacao-automatica.svg";
 import { Button } from "./Button";
 export const CardSale = ({ cards = {} }) => {
   return (
@@ -52,7 +52,7 @@ export const CardSale = ({ cards = {} }) => {
             />
             <div className="flex justify-between text-xs leading-3.5 ">
               <figure className="flex flex-col gap-2 items-center text-center">
-                <img className="w-6" src={iconSelo} alt="Selo de Garantia" />
+                <img className="w-6" src={iconSelo} alt="Selo de Garantia" loading="lazy" />
                 <figcaption>
                   15 dias
                   <br />
@@ -60,7 +60,7 @@ export const CardSale = ({ cards = {} }) => {
                 </figcaption>
               </figure>
               <figure className="flex flex-col gap-2 items-center text-center">
-                <img className="w-6" src={iconCartao} alt="Cartão de Crédito" />
+                <img className="w-6" src={iconCartao} loading="lazy" alt="Cartão de Crédito" />
                 <figcaption>
                   Cobrado o valor
                   <br />
@@ -72,6 +72,7 @@ export const CardSale = ({ cards = {} }) => {
                   className="w-6"
                   src={iconRenovacao}
                   alt="Renovação Automática"
+                  loading="lazy"
                 />
                 <figcaption>
                   Renovação

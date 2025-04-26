@@ -1,9 +1,9 @@
 import { sale } from "../../data/sale";
 import { CardSale } from "../CardSale";
-import selo from "../../assets/images/selo-garantia.webp";
-import imagem from "../../assets/images/plataforma-solta.webp";
-import imagemDispositivoDesktop from "../../assets/images/dispositivos-plataforma-solta-desktop.webp";
-import imagemDispositivoMobile from "../../assets/images/dispositivos-plataforma-solta-mobile.webp";
+import selo from "/assets/images/selo-garantia.webp";
+import imagem from "/assets/images/plataforma-solta.webp";
+import imagemDispositivoDesktop from "/assets/images/dispositivos-plataforma-solta-desktop.webp";
+import imagemDispositivoMobile from "/assets/images/dispositivos-plataforma-solta-mobile.webp";
 export const Sale = () => {
   return (
     <section
@@ -43,7 +43,7 @@ export const Sale = () => {
                 garantida <br />
                 por 15 dias.
               </h2>
-              <img src={selo} alt="Selo de Garantia" className="w-[30%]" />
+              <img src={selo} alt="Selo de Garantia" className="w-[30%]" loading="lazy"/>
             </div>
             <p className="text-lg md:text-xl text-brand-gray-800">
               <strong className="font-bold text-brand-dark">
@@ -61,7 +61,8 @@ export const Sale = () => {
           <img
             className="drop-shadow-xl"
             src={imagem}
-            alt="Todos os serviços que podem ser adiquiridos ao "
+            alt="Todos os serviços que podem ser adiquiridos "
+            loading="lazy"
           />
         </div>
       </div>
@@ -73,11 +74,13 @@ export const Sale = () => {
           src={imagemDispositivoDesktop}
           alt="Plataforma solta em diversos dispositivos"
           className="w-[80%] lg:w-[90%] hidden md:block"
+          loading="lazy"
         />
         <img
           src={imagemDispositivoMobile}
           alt="Plataforma solta em diversos dispositivos"
           className="w-full block md:hidden"
+          loading="lazy"
         />
       </div>
       <div className=" py-12 md:py-16 px-6 xl:px-0 max-w-2xl mx-auto flex flex-col items-center gap-2">

@@ -1,7 +1,7 @@
-import logo from "../assets/images/solta-move-logo.webp"
-import ilustracao from "../assets/images/ilustracao-maratona.svg"
-import iconInstragram from "../assets/images/icons/instagram.svg"
-import iconYoutube from "../assets/images/icons/youtube.svg"
+import logo from "/assets/images/solta-move-logo.webp"
+import ilustracao from "/assets/images/ilustracao-maratona.svg"
+import iconInstragram from "/assets/images/icons/instagram.svg"
+import iconYoutube from "/assets/images/icons/youtube.svg"
 
 export const Footer = () => {
     return (
@@ -14,13 +14,13 @@ export const Footer = () => {
         {/* Logo + Redes + Direitos */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 z-10">
           <div className="flex flex-col gap-2 container-margin">
-            <img src={logo} alt="Solta Move" className="w-16" />
+            <img src={logo} alt="Solta Move" className="w-16" loading="lazy" />
             <div className="flex gap-4 mt-2">
               <a href="https://www.instagram.com" aria-label="Instagram">
-                <img src={iconInstragram} alt="Instagram" className="w-8" />
+                <img src={iconInstragram} alt="Instagram" className="w-8" loading="lazy" />
               </a>
               <a href="https://www.youtube.com" aria-label="YouTube">
-                <img src={iconYoutube} alt="YouTube" className="w-8" />
+                <img src={iconYoutube} alt="YouTube" className="w-8" loading="lazy" />
               </a>
             </div>
             <small className="text-sm mt-4">©2025 Solta Move<br />Todos os direitos reservados.</small>
@@ -32,6 +32,7 @@ export const Footer = () => {
             alt="Ilustração, mulher se exercitando"
             aria-hidden="true"
             className="absolute hidden md:block right-0 bottom-0 h-[200px] object-contain z-0"
+            loading="lazy"
           />
         </div>
       </footer>

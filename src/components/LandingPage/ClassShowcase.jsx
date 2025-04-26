@@ -1,7 +1,7 @@
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { treinamentos, maratonas } from "../../data/classes";
-import imagem from "../../assets/images/siga-o-fluxo.webp"
+import imagem from "/assets/images/siga-o-fluxo.webp"
 
 export const ClassShowcase = () => {
   return (
@@ -63,6 +63,7 @@ export const ClassShowcase = () => {
                     className=" aspect-video object-cover object-center"
                     src={item.image}
                     alt={`Foto de ${item.title}`}
+                    loading="lazy"
                   />
                 </div>
                
@@ -146,6 +147,7 @@ export const ClassShowcase = () => {
                     className="w-full bg-center aspect-video "
                     src={item.image}
                     alt={`Maratona - ${item.title}`}
+                    loading="lazy"
                   />
                 </div>
             </SwiperSlide>
@@ -181,7 +183,7 @@ Mantenha o ciclo de treino.
         </p>
         </div>
       
-      <img src={imagem}  alt="Imagem de uma mulher fazendo exercício sincronizado com seu ciclo mentrual" />
+      <img src={imagem}  alt="Imagem de uma mulher fazendo exercício sincronizado com seu ciclo mentrual"  loading="lazy"/>
       </div>
     </section>
   );

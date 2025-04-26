@@ -1,7 +1,5 @@
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { advantages } from "../../data/advantages";
-import image from "../../assets/images/e-sobre-o-que-sente.webp";
+import image from "/assets/images/e-sobre-o-que-sente.webp";
 
 export const Advantages = () => {
   return (
@@ -24,6 +22,7 @@ export const Advantages = () => {
       className="w-[90%] md:w-[50%] object-contain"
       src={image}
       alt="Mulher praticando exercícios"
+      loading="lazy"
     />
   </div>
 

@@ -71,7 +71,7 @@ export const Activities = () => {
               >
                 <figure key={index}>
                   <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-2   bg-brand-gray-100 relative flex items-center justify-center ">
-                    <img className="" src={item.image} alt={` ${item.title}`} />
+                    <img className="" loading="lazy" src={item.image} alt={` ${item.title}`} />
                   </div>
 
                   <figcaption className="text-brand-dark font-bold text-sm  md:text-[15px] text-center leading-none">
@@ -119,7 +119,7 @@ export const Activities = () => {
               >
                 <figure key={index}>
                   <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-2   bg-brand-gray-100 relative flex items-center justify-center ">
-                    <img className="" src={item.image} alt={` ${item.title}`} />
+                    <img className="" src={item.image} alt={` ${item.title}`} loading="lazy" />
                   </div>
 
                   <figcaption className="text-brand-dark font-bold text-sm  md:text-[15px] text-center leading-none">
@@ -180,6 +180,7 @@ export const Activities = () => {
                     className="w-28"
                     src={item.image}
                     alt={` ${item.highlight}`}
+                    loading="lazy"
                   />
                 </div>
 

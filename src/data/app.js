@@ -1,6 +1,6 @@
 export const app = [
     {
-      image: "/assets/images/time.svg",
+      image: "/assets/images/icons/time.svg",
       highlight:
         'No seu tempo',
         part1:'Os treinos encaixam na sua rotina, não ao contrário. Com',
@@ -10,21 +10,21 @@ export const app = [
  
     },
     {
-      image: "/assets/images/rhythm.svg",
+      image: "/assets/images/icons/rhythm.svg",
       highlight:
         'No seu ritmo',
         part1:'Os exercícios têm variações de movimento, intensidade e impacto que se adequam ao seu ritmo do dia. Você decide se quer pegar mais leve ou quebrar seu recorde.',
 
     },
     {
-      image: "/assets/images/dashboard.svg",
+      image: "/assets/images/icons/dashboard.svg",
       highlight:
         'Do seu jeito.',
         part1:'Você não precisa seguir uma tendência. Escolha os treinos que mais combinam com você e sinta-se livre para fazer combinações do seu jeitinho.',
 
     },
     {
-      image: "/assets/images/app.svg",
+      image: "/assets/images/icons/app.svg",
       highlight:
         'Em qualquer lugar. A qualquer hora.',
         part1:'Treine em casa, na academia, no parque, onde você quiser. Quando o assunto é se movimentar e cuidar de você, a gente acredita que não pode haver barreiras (ou paredes).',

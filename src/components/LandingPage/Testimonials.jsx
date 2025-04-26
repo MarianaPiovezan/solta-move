@@ -63,6 +63,7 @@ export const Testimonials = () => {
                     className="w-full"
                     src={item.image}
                     alt={`Foto de ${item.name}`}
+                    loading="lazy"
                   />
                 </div>
                 <blockquote className="text-brand-gray-700 text-base md:text-lg">
