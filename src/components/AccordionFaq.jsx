@@ -1,4 +1,9 @@
-import { m, LazyMotion, domAnimation, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  LazyMotion,
+  domAnimation,
+  AnimatePresence,
+} from "motion/react";
 
 export const AccordionFaq = ({ faq = {}, open = false, onClick }) => {
   const animate = {
@@ -29,7 +34,7 @@ export const AccordionFaq = ({ faq = {}, open = false, onClick }) => {
       <LazyMotion features={domAnimation} strict>
         <AnimatePresence initial={false}>
           {open && (
-            <m.div
+            <motion.div
               style={{ overflow: "hidden" }}
               initial={{ height: 0, opacity: 0 }}
               animate={animate}
@@ -40,7 +45,7 @@ export const AccordionFaq = ({ faq = {}, open = false, onClick }) => {
                   {faq.resposta}
                 </p>
               </div>
-            </m.div>
+            </motion.div>
           )}
         </AnimatePresence>
       </LazyMotion>

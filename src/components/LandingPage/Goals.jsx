@@ -4,20 +4,39 @@ import { goals } from "../../data/goals";
 import moldura from "/assets/images/moldura-smartphone.webp";
 import gif from "/assets/images/perguntas-calendário-de-treino.gif";
 import imagem from "/assets/images/mulher-alongamento.webp";
+import { motion } from "motion/react";
 
 export const Goals = () => {
   return (
     <section
       id="goals"
-      aria-label="Depoimentos de alunas"
-      className="overflow-hidden pt-12 md:pt-16  "
+      aria-label="Definir objetivos"
+      className="overflow-hidden pt-12 md:pt-16"
     >
-      <div className="flex flex-col lg:flex-row px-6 gap-6 lg:gap-16 justify-center items-center   mx-6 mb-8 bg-brand-dark rounded-2xl md:rounded-3xl container-margin   text-brand-light pt-8 md:px-24 ">
+      <motion.div
+        className="flex flex-col lg:flex-row px-6 gap-6 lg:gap-16 justify-center items-center mx-6 mb-8 bg-brand-dark rounded-2xl md:rounded-3xl container-margin text-brand-light pt-8 md:px-24"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <div className="flex flex-col gap-6 md:gap-8 max-w-[533px] p-0 md:py-10">
-          <h2 className="text-3xl md:text-5xl font-extrabold ">
+          <motion.h2
+            className="text-3xl md:text-5xl font-extrabold"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             Defina seu objetivo e a gente te guia até lá.
-          </h2>
-          <p className="text-lg md:text-xl">
+          </motion.h2>
+          <motion.p
+            className="text-lg md:text-xl"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
             <strong className="text-brand-yellow">
               Receba um calendário de treino recomendado para você.
             </strong>{" "}
@@ -25,14 +44,14 @@ export const Goals = () => {
             que precisa fazer para evoluir nos treinos e chegar no seu objetivo
             principal. Nós planejamos tudo, então a única coisa que você precisa
             fazer é aparecer no treino.
-          </p>
+          </motion.p>
         </div>
-        <div className="relative z-10 w-full max-w-md md:pt-8 md:self-end ">
-          {/* moldura como fundo, gif sobreposto */}
+
+        <div className="relative z-10 w-full max-w-md md:pt-8 md:self-end">
           <img
             src={gif}
             alt="Tela de exemplo do aplicativo com opções de objetivo"
-            className="relative w-[55%] max-w-[350px]  -bottom-0 left-1/2 -translate-x-1/2 "
+            className="relative w-[55%] max-w-[350px] -bottom-0 left-1/2 -translate-x-1/2"
             loading="lazy"
           />
           <img
@@ -43,14 +62,19 @@ export const Goals = () => {
             loading="lazy"
           />
         </div>
-      </div>
+      </motion.div>
 
-      <h3 className="text-2xl md:text-3xl container-margin pt-8 font-extrabold px-6 xl:px-0">
+      <motion.h3
+        className="text-2xl md:text-3xl container-margin pt-8 font-extrabold px-6 xl:px-0"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         Comece sua Jornada. Entregue tudo.
-      </h3>
+      </motion.h3>
 
-  
-      <div className="container-margin h-auto px-6 xl:px-0 pt-6 md:pt-8    relative  mx-auto  pr-0 overflow-visible">
+      <div className="container-margin h-auto px-6 xl:px-0 pt-6 md:pt-8 relative mx-auto pr-0 overflow-visible">
         <Swiper
           className="mb-12 sm:block !overflow-visible"
           modules={[Navigation, Pagination, Autoplay]}
@@ -67,21 +91,10 @@ export const Goals = () => {
             bulletClass: "swiper-pagination-bullet bg-como-participar-details",
           }}
           breakpoints={{
-            520: {
-              slidesPerView: 2.5,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 48
-            },
-            1200: {
-              slidesPerView: 3,
-              spaceBetween: 48
-            },
-            1400: {
-              slidesPerView: 3,
-              spaceBetween: 48
-            },
+            520: { slidesPerView: 2.5 },
+            768: { slidesPerView: 2, spaceBetween: 48 },
+            1200: { slidesPerView: 3, spaceBetween: 48 },
+            1400: { slidesPerView: 3, spaceBetween: 48 },
           }}
         >
           {goals.map((item, index) => (
@@ -89,7 +102,12 @@ export const Goals = () => {
               key={index}
               className="flex flex-col justify-center items-center"
             >
-              <figure>
+              <motion.figure
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
                 <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100 relative">
                   <h3 className="font-extrabold text-sm md:text-base lg:text-lg leading-none absolute top-4 left-4 w-[100px] md:w-[150px] lg:w-[200px]">
                     {item.title}
@@ -101,36 +119,62 @@ export const Goals = () => {
                     loading="lazy"
                   />
                 </div>
-
                 <figcaption className="text-brand-gray-700 pt-1 mt-3 text-sm md:text-base">
                   <strong className="text-brand-dark">{item.highlight}</strong>{" "}
                   {item.description}
                 </figcaption>
-              </figure>
+              </motion.figure>
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="absolute !flex flex-row   !items-center justify-center gap-3  right-6 xl:right-0 !mt-4 ">
+
+        <div className="absolute !flex flex-row !items-center justify-center gap-3 right-6 xl:right-0 !mt-4">
           <div
-            className="swiper-button-prev !w-8 prev  !pl-1"
+            className="swiper-button-prev !w-8 prev !pl-1"
             role="button"
             aria-label="Depoimento anterior"
             tabIndex={0}
           />
           <div
-            className="swiper-button-next !w-8 next  !pr-1"
+            className="swiper-button-next !w-8 next !pr-1"
             role="button"
             aria-label="Próximo depoimento"
             tabIndex={0}
           />
         </div>
       </div>
-      <div className="text-3xl md:text-5xl font-extrabold text-brand-dark flex flex-col md:flex-row items-center  container-margin justify-between pt-16 px-6 ">
-        <h3 className="self-start md:self-center leading-none">Para o <br/>
-        corpo todo</h3>
-        <img src={imagem} className="sm:w-[70%] md:w-[50%] md:-ml-[8%]" alt="Mulher se alongando" loading="lazy" />
-        <h3 className="self-end md:self-center leading-none text-right md:text-left">e todos <br/>
-        os corpos</h3>
+
+      <div
+        className="text-3xl md:text-5xl font-extrabold text-brand-dark flex flex-col md:flex-row items-center container-margin justify-between pt-16 px-6"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <motion.h3 className="self-start md:self-center leading-none"
+         initial={{ opacity: 0, y: 30 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{ duration: 1, delay: 1 * 0.3 }}
+         viewport={{ once: true }}>
+          Para o <br /> corpo todo
+        </motion.h3>
+        <motion.img
+          src={imagem}
+          className="sm:w-[70%] md:w-[50%] md:-ml-[8%]"
+          alt="Mulher se alongando"
+          loading="blur"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        />
+        <motion.h3 className="self-end md:self-center leading-none text-right md:text-left"
+         initial={{ opacity: 0, y: 30 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{ duration: 1, delay: 2 * 0.3 }}
+         viewport={{ once: true }}>
+          e todos <br /> os corpos
+        </motion.h3>
       </div>
     </section>
   );

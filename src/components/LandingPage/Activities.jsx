@@ -2,6 +2,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { activities1, activities2 } from "../../data/activities";
 import { app } from "../../data/app";
+import { motion } from "motion/react";
 
 export const Activities = () => {
   return (
@@ -11,13 +12,30 @@ export const Activities = () => {
       className="overflow-hidden py-12 md:py-16  "
     >
       <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
-        <h2 className="text-3xl md:text-5xl font-extrabold ">
+        <motion.h2
+          className="text-3xl md:text-5xl font-extrabold "
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           Encontre o treino que mexe com você.
-        </h2>
+        </motion.h2>
       </div>
       <div className="container-margin px-6 xl:px-0 flex flex-col md:flex-row gap-8 h-full items-stretch">
-        <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-gray-800 text-lg md:text-xl  md:w-1/2 ">
-          <p>
+        <motion.div
+          className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-gray-800 text-lg md:text-xl  md:w-1/2 "
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             {" "}
             <strong className="text-brand-dark">
               Treinos fora do padrão para você descobrir sua modalidade do
@@ -32,9 +50,12 @@ export const Activities = () => {
               não se surpreenda se você começar a ficar animada pelo próximo
               treino.
             </strong>
-          </p>
-        </div>
-        <div className="bg-brand-gray-100 py-6 md:py-12 rounded-2xl  md:rounded-3xl text-brand-gray-700 text-lg md:text-xl md:w-1/2  ">
+          </motion.p>
+        </motion.div>
+        <motion.div className="bg-brand-gray-100 py-6 md:py-12 rounded-2xl  md:rounded-3xl text-brand-gray-700 text-lg md:text-xl md:w-1/2  " initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          viewport={{ once: true }}>
           <Swiper
             className="sm:block mb-6 md:mb-8"
             modules={[Navigation, Pagination, Autoplay]}
@@ -71,7 +92,12 @@ export const Activities = () => {
               >
                 <figure key={index}>
                   <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-2   bg-brand-gray-100 relative flex items-center justify-center ">
-                    <img className="" loading="lazy" src={item.image} alt={` ${item.title}`} />
+                    <img
+                      className=""
+                      loading="lazy"
+                      src={item.image}
+                      alt={` ${item.title}`}
+                    />
                   </div>
 
                   <figcaption className="text-brand-dark font-bold text-sm  md:text-[15px] text-center leading-none">
@@ -119,7 +145,12 @@ export const Activities = () => {
               >
                 <figure key={index}>
                   <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-2   bg-brand-gray-100 relative flex items-center justify-center ">
-                    <img className="" src={item.image} alt={` ${item.title}`} loading="lazy" />
+                    <img
+                      className=""
+                      src={item.image}
+                      alt={` ${item.title}`}
+                      loading="lazy"
+                    />
                   </div>
 
                   <figcaption className="text-brand-dark font-bold text-sm  md:text-[15px] text-center leading-none">
@@ -129,7 +160,7 @@ export const Activities = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </motion.div>
       </div>
 
       <h3 className="text-2xl md:text-3xl container-margin py-6 md:py-8 font-extrabold px-6  xl:px-0">
@@ -161,11 +192,11 @@ export const Activities = () => {
             },
             768: {
               slidesPerView: 2.5,
-              spaceBetween:48
+              spaceBetween: 48,
             },
             1200: {
               slidesPerView: 4,
-              spaceBetween:48
+              spaceBetween: 48,
             },
           }}
         >
