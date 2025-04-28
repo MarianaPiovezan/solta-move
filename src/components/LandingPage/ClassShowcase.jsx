@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { treinamentos, maratonas } from "../../data/classes";
 import imagem from "/assets/images/siga-o-fluxo.webp"
 import { motion } from "motion/react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const ClassShowcase = () => {
   return (
@@ -68,12 +69,13 @@ export const ClassShowcase = () => {
               className="flex flex-col justify-center items-center"
             >
               <figure>
-                <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-1 border border-brand-gray-100  ">
-                  <img
-                    className=" aspect-video object-cover object-center"
-                    src={item.image}
-                    alt={`Foto de ${item.title}`}
-                    loading="lazy"
+                <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-1 border border-brand-gray-100 aspect-7/4  ">
+                <LazyLoadImage
+                   src={item.image}
+                   alt={`Foto de ${item.name}`}
+                   effect="blur"
+                   className="w-full h-full object-cover"
+                   
                   />
                 </div>
                
@@ -161,14 +163,14 @@ export const ClassShowcase = () => {
               className="flex flex-col justify-center items-center"
             >
           
-                <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-1 border border-brand-gray-100  ">
-                  <img
-                    className="w-full bg-center aspect-video "
-                    src={item.image}
-                    alt={`Maratona - ${item.title}`}
-                    loading="lazy"
-                  />
-                </div>
+          <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-1 border border-brand-gray-100 aspect-6/3 bg-gray-200">
+  <LazyLoadImage
+    src={item.image}
+    alt={`Foto de ${item.name}`}
+    effect="blur"
+    className="w-full h-full object-cover"
+  />
+</div>
             </SwiperSlide>
           ))}
         </Swiper>

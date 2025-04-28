@@ -5,11 +5,10 @@ import moldura from "/assets/images/moldura-smartphone.webp";
 import gif from "/assets/images/perguntas-calendário-de-treino.gif";
 import imagem from "/assets/images/mulher-alongamento.webp";
 import { motion } from "motion/react";
-import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Goals = () => {
-  const [loaded, setLoaded] = useState(false);
+ 
   return (
     <section
       id="goals"
