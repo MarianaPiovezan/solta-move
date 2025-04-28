@@ -1,6 +1,6 @@
 export const goals = [
     {
-      image: "/assets/images/jornada/jornada-fortalecimento.webp",
+      image: "/assets/images/jornadas/jornada-fortalecimento.webp",
       title: "Jornada mais forte que nunca",
       highlight:
         'Jornada de fortalecimento',
@@ -9,7 +9,7 @@ export const goals = [
  
     },
     {
-      image: "/assets/images/jornada/jornada-emagrecimento.webp",
+      image: "/assets/images/jornadas/jornada-emagrecimento.webp",
       title: "Jornada além do espelho",
       highlight:
       'Jornada de emagrecimento saudável',
@@ -18,7 +18,7 @@ export const goals = [
     
     },
     {
-      image: "/assets/images/jornada/jornada-saude.webp",
+      image: "/assets/images/jornadas/jornada-saude.webp",
       title: "Jornada saúde dos pés a cabeça",
       highlight:
       'Jornada em que saúde física e mental caminham juntas.',

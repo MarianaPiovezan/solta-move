@@ -144,8 +144,8 @@ export const Goals = () => {
         </div>
       </div>
 
-      <div
-        className="text-3xl md:text-5xl font-extrabold text-brand-dark flex flex-col md:flex-row items-center container-margin justify-between pt-16 px-6"
+      <motion.div
+        className="text-3xl md:text-5xl font-extrabold text-brand-dark flex flex-col md:flex-row items-center container-margin justify-between pt-16 px-6 !overflow-visible"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -175,7 +175,7 @@ export const Goals = () => {
          viewport={{ once: true }}>
           e todos <br /> os corpos
         </motion.h3>
-      </div>
+      </motion.div>
     </section>
   );
 };

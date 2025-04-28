@@ -94,7 +94,7 @@ export const Activities = () => {
                   <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-2   bg-brand-gray-100 relative flex items-center justify-center ">
                     <img
                       className=""
-                      loading="lazy"
+                      loading="blur"
                       src={item.image}
                       alt={` ${item.title}`}
                     />
@@ -149,7 +149,7 @@ export const Activities = () => {
                       className=""
                       src={item.image}
                       alt={` ${item.title}`}
-                      loading="lazy"
+                      loading="blur"
                     />
                   </div>
 
@@ -163,13 +163,20 @@ export const Activities = () => {
         </motion.div>
       </div>
 
-      <h3 className="text-2xl md:text-3xl container-margin py-6 md:py-8 font-extrabold px-6  xl:px-0">
+      <motion.h3 className="text-2xl md:text-3xl container-margin py-6 md:py-8 font-extrabold px-6  xl:px-0"    initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}>
         Você é única. <br />
         Sua maneira de se mover também.
-      </h3>
-      <div
+      </motion.h3>
+      <motion.div
         id="activities-app"
         className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        viewport={{ once: true }}
       >
         <Swiper
           className="mb-12 sm:block !overflow-visible"
@@ -211,7 +218,7 @@ export const Activities = () => {
                     className="w-28"
                     src={item.image}
                     alt={` ${item.highlight}`}
-                    loading="lazy"
+                    loading="blur"
                   />
                 </div>
 
@@ -239,7 +246,7 @@ export const Activities = () => {
             tabIndex={0}
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
