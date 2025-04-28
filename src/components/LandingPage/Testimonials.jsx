@@ -74,7 +74,8 @@ export const Testimonials = () => {
                     src={item.image}
                     alt={`Foto de ${item.name}`}
                     effect="blur"
-                    className="w-full h-full"
+                    className="w-full h-full object-cover"
+                    placeholderSrc={item.imagePlaceholder}
                   />
                 </div>
                 <blockquote className="text-brand-gray-700 text-base md:text-lg">

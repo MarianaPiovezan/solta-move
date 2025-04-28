@@ -1,6 +1,7 @@
 export const testimonials = [
     {
       image: "/assets/images/depoimentos/ana-paula.webp",
+      imagePlaceholder: "/assets/images/depoimentos/ana-paula-small.webp",
       part1:
         '“Exercício pra mim era sinônimo de dor e sofrimento.',
         part2:' Pela primeira vez na vida, me sinto em paz com meu corpo e gostando de treinar.',
@@ -9,6 +10,7 @@ export const testimonials = [
     },
     {
       image: "/assets/images/depoimentos/luana.webp",
+      imagePlaceholder: "/assets/images/depoimentos/luana-small.webp",
       part1:
         '“Antes fazia exercício puramente por pressão estética. Hoje pra mim é autocuidado, amor ao corpo.',
         part2:' Os treinos me ajudaram demais no meu processo de autoestima e amor próprio.',
@@ -17,6 +19,7 @@ export const testimonials = [
     },
     {
       image: "/assets/images/depoimentos/rafaela.webp",
+      imagePlaceholder: "/assets/images/depoimentos/rafaela-small.webp",
       part1:
         '“Estava sedentária e me sentia muito cansada ao fazer coisas básicas. Agora com os treinos, percebi que quando faço a compra do mês, tenho conseguido carregar cada vez mais coisas de uma vez.',
         part2:' Não me sinto ofegante como antes. Uma coisa simples, mas que me mostra o quanto tá valendo a pena.”',
@@ -24,6 +27,7 @@ export const testimonials = [
     },
     {
       image: "/assets/images/depoimentos/mari.webp",
+      imagePlaceholder: "/assets/images/depoimentos/mari-small.webp",
       part1:
         `“Sempre senti um peixe fora d'água na academia. A Solta foi como um abraço quentinho e aconchegante!`,
         part2:' Parece que foi pensado em mim. Nas necessidades de uma pessoa gorda.',
@@ -32,6 +36,7 @@ export const testimonials = [
     },
     {
       image: "/assets/images/depoimentos/juliana.webp",
+      imagePlaceholder: "/assets/images/depoimentos/juliana-small.webp",
       part1:
         `“Antes eu ficava morrendo só de caminhar. Hoje tenho viajado para vários lugares que fazemos tudo a pé. Tenho muito mais disposição para fazer as coisas no meu dia a dia.`,
         part2:' Outro dia meu filho falou: ‘Mamãe tá conseguindo abaixar!’.',
@@ -40,6 +45,7 @@ export const testimonials = [
     },
     {
       image: "/assets/images/depoimentos/leticia.webp",
+      imagePlaceholder: "/assets/images/depoimentos/leticia-small.webp",
       part1:
         `“Sentia muita dor no quadril e no joelho. Estava sem disposição. As festas já não eram tão prazerosas pra mim.`,
         part2:' Depois de 34 anos me diverti em um show pela primeira vez graças aos treinos.',
