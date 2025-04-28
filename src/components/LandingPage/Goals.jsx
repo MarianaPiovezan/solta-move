@@ -6,6 +6,7 @@ import gif from "/assets/images/perguntas-calendário-de-treino.gif";
 import imagem from "/assets/images/mulher-alongamento.webp";
 import { motion } from "motion/react";
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Goals = () => {
   const [loaded, setLoaded] = useState(false);
@@ -105,18 +106,17 @@ export const Goals = () => {
               className="flex flex-col justify-center items-center"
             >
               <figure>
-                <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100 relative">
-                  <h3 className="font-extrabold text-sm md:text-base lg:text-lg leading-none absolute top-4 left-4 w-[100px] md:w-[150px] lg:w-[200px]">
+                <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100 relative aspect-3/2">
+                  <h3 className="font-extrabold text-sm md:text-base lg:text-lg leading-none absolute top-4 left-4 w-[100px] z-10 md:w-[150px] lg:w-[200px]">
                     {item.title}
                   </h3>
-                  <img
-                    className={`w-full transition-all duration-700 ${
-                      loaded ? "blur-0" : "blur-md"
-                    }`}
-                    src={item.image}
-                    onLoad={() => setLoaded(true)}
-                    alt={`Foto de ${item.name}`}
-                    loading="lazy"
+                  
+                  <LazyLoadImage
+                   src={item.image}
+                   alt={`Foto de ${item.name}`}
+                   effect="blur"
+                   className="w-full h-full"
+                   
                   />
                 </div>
                 <figcaption className="text-brand-gray-700 pt-1 mt-3 text-sm md:text-base">

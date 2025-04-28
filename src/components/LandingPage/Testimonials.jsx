@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonials } from "../../data/testimonials";
 import { motion } from "motion/react";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 export const Testimonials = () => {
 
@@ -71,16 +71,18 @@ export const Testimonials = () => {
               className="flex flex-col justify-center items-center"
             >
               <figure>
-                <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100">
+                <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100 aspect-3/4">
                   <LazyLoadImage
                    
                    
                     src={item.image}
                     alt={`Foto de ${item.name}`}
                     effect="blur"
+                    className="w-full h-full"
                     
-                    width='100%'
-                    height="auto"
+                   
+                  
+                   
                   />
                 </div>
                 <blockquote className="text-brand-gray-700 text-base md:text-lg">
