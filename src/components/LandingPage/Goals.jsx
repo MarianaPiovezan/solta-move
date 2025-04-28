@@ -76,7 +76,13 @@ export const Goals = () => {
         Comece sua Jornada. Entregue tudo.
       </motion.h3>
 
-      <div className="container-margin h-auto px-6 xl:px-0 pt-6 md:pt-8 relative mx-auto pr-0 overflow-visible">
+      <motion.div
+        className="container-margin h-auto px-6 xl:px-0 pt-6 md:pt-8 relative mx-auto pr-0 overflow-visible"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        viewport={{ once: true }}
+      >
         <Swiper
           className="mb-12 sm:block !overflow-visible"
           modules={[Navigation, Pagination, Autoplay]}
@@ -104,18 +110,15 @@ export const Goals = () => {
               key={index}
               className="flex flex-col justify-center items-center"
             >
-              <motion.figure
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
+              <figure>
                 <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100 relative">
                   <h3 className="font-extrabold text-sm md:text-base lg:text-lg leading-none absolute top-4 left-4 w-[100px] md:w-[150px] lg:w-[200px]">
                     {item.title}
                   </h3>
                   <img
-                    className={`w-full transition-all duration-700 ${loaded ? 'blur-0' : 'blur-md'}`}
+                    className={`w-full transition-all duration-700 ${
+                      loaded ? "blur-0" : "blur-md"
+                    }`}
                     src={item.image}
                     onLoad={() => setLoaded(true)}
                     alt={`Foto de ${item.name}`}
@@ -126,7 +129,7 @@ export const Goals = () => {
                   <strong className="text-brand-dark">{item.highlight}</strong>{" "}
                   {item.description}
                 </figcaption>
-              </motion.figure>
+              </figure>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -145,7 +148,7 @@ export const Goals = () => {
             tabIndex={0}
           />
         </div>
-      </div>
+      </motion.div>
 
       <motion.div
         className="text-3xl md:text-5xl font-extrabold text-brand-dark flex flex-col md:flex-row items-center container-margin justify-between pt-16 px-6 !overflow-visible"
@@ -154,11 +157,13 @@ export const Goals = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <motion.h3 className="self-start md:self-center leading-none"
-         initial={{ opacity: 0, y: 30 }}
-         whileInView={{ opacity: 1, y: 0 }}
-         transition={{ duration: 1, delay: 1 * 0.3 }}
-         viewport={{ once: true }}>
+        <motion.h3
+          className="self-start md:self-center leading-none"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1 * 0.3 }}
+          viewport={{ once: true }}
+        >
           Para o <br /> corpo todo
         </motion.h3>
         <motion.img
@@ -171,11 +176,13 @@ export const Goals = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         />
-        <motion.h3 className="self-end md:self-center leading-none text-right md:text-left"
-         initial={{ opacity: 0, y: 30 }}
-         whileInView={{ opacity: 1, y: 0 }}
-         transition={{ duration: 1, delay: 2 * 0.3 }}
-         viewport={{ once: true }}>
+        <motion.h3
+          className="self-end md:self-center leading-none text-right md:text-left"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 2 * 0.3 }}
+          viewport={{ once: true }}
+        >
           e todos <br /> os corpos
         </motion.h3>
       </motion.div>
