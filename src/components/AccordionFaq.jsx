@@ -5,7 +5,7 @@ import {
   AnimatePresence,
 } from "motion/react";
 
-export const AccordionFaq = ({ faq = {}, open = false, onClick }) => {
+export const AccordionFaq = ({ faq = {}, open = false, onClick,  delay, inView }) => {
   const animate = {
     height: open ? "auto" : 0,
     opacity: open ? 1 : 0.5,
@@ -13,7 +13,9 @@ export const AccordionFaq = ({ faq = {}, open = false, onClick }) => {
   };
 
   return (
-    <div>
+    <motion.div initial={{ opacity: 0, x: -30 }}
+    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+    transition={{ duration: 0.6, delay: delay * 0.5 }}>
       <button
         className={` w-full text-brand-dark  py-4 md:py-6 rounded-2xl flex justify-between items-center gap-2 text-lg md:text-xl cursor-pointer leading-5`}
         type="button"
@@ -49,6 +51,6 @@ export const AccordionFaq = ({ faq = {}, open = false, onClick }) => {
           )}
         </AnimatePresence>
       </LazyMotion>
-    </div>
+    </motion.div>
   );
 };

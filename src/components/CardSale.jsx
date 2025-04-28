@@ -2,11 +2,15 @@ import iconSelo from "/assets/images/icons/selo-garantia.svg";
 import iconCartao from "/assets/images/icons/cartao-credito.svg";
 import iconRenovacao from "/assets/images/icons/renovacao-automatica.svg";
 import { Button } from "./Button";
-export const CardSale = ({ cards = {} }) => {
+import { motion } from "motion/react";
+export const CardSale = ({ cards = {}, delay="" }) => {
   return (
     <>
       {/* Fita "Mais Escolhido" */}
-      <div className="flex flex-col items-center justify-center hover:scale-105 w-full  duration-300 ease-in-out overflow-visible ">
+      <motion.div className="flex flex-col items-center justify-center hover:scale-105 w-full  duration-300 ease-in-out overflow-visible "  initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: delay * 0.3 }}
+          viewport={{ once: true }}>
         <div
           className={` bg-brand-pink text-sm font-semibold   text-center py-1   rounded-t-xl shadow-md   w-[65%] md:w-[70%] ${
             cards.category === "Anual"
@@ -84,7 +88,7 @@ export const CardSale = ({ cards = {} }) => {
           </div>
         </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
