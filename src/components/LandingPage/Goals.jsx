@@ -23,21 +23,15 @@ export const Goals = () => {
         viewport={{ once: true }}
       >
         <div className="flex flex-col gap-6 md:gap-8 max-w-[533px] p-0 md:py-10">
-          <motion.h2
+          <h2
             className="text-3xl md:text-5xl font-extrabold"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
+          
           >
             Defina seu objetivo e a gente te guia até lá.
-          </motion.h2>
-          <motion.p
+          </h2>
+          <p
             className="text-lg md:text-xl"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.3 }}
-            viewport={{ once: true }}
+            
           >
             <strong className="text-brand-yellow">
               Receba um calendário de treino recomendado para você.
@@ -46,7 +40,7 @@ export const Goals = () => {
             que precisa fazer para evoluir nos treinos e chegar no seu objetivo
             principal. Nós planejamos tudo, então a única coisa que você precisa
             fazer é aparecer no treino.
-          </motion.p>
+          </p>
         </div>
 
         <div className="relative z-10 w-full max-w-md md:pt-8 md:self-end">

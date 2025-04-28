@@ -2,10 +2,11 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonials } from "../../data/testimonials";
 import { motion } from "motion/react";
-import { useState } from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const Testimonials = () => {
-  const [loaded, setLoaded] = useState(false);
+
   return (
     <section
       id="testimonials"
@@ -71,14 +72,15 @@ export const Testimonials = () => {
             >
               <figure>
                 <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100">
-                  <img
-                    className={`w-full transition-all duration-700 ${
-                      loaded ? "blur-0" : "blur-md"
-                    }`}
-                    onLoad={() => setLoaded(true)}
+                  <LazyLoadImage
+                   
+                   
                     src={item.image}
                     alt={`Foto de ${item.name}`}
-                    loading="lazy"
+                    effect="blur"
+                    
+                    width='100%'
+                    height="auto"
                   />
                 </div>
                 <blockquote className="text-brand-gray-700 text-base md:text-lg">
