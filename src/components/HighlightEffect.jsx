@@ -41,15 +41,15 @@
     }, []);
 
     return (
-      <div ref={containerRef} className="py-24 bg-brand-gray-100 flex flex-col items-center gap-8">
+      <div ref={containerRef} className="py-24 bg-brand-gray-100 flex flex-col items-center gap-2">
         <p className="text-2xl md:text-3xl font-semibold text-center leading-relaxed flex flex-wrap justify-center gap-2 px-6">
           {frases.map((frase, index) => (
             <span
               key={index}
               className={`transition-all duration-300 leading-none ${
                 fraseAtiva === index
-                  ? "text-brand-dark font-bold opacity-100"
-                  : "text-gray-400 font-bold opacity-60"
+                  ? "text-brand-dark font-bold opacity-100 "
+                  : "text-brand-gray-700 font-bold opacity-80 "
               }`}
             >
               {frase}
@@ -59,7 +59,7 @@
 
         {/* Texto Final */}
         <p
-          className={`text-xl md:text-2xl font-bold text-center  px-4 transition-opacity duration-700 ${
+          className={`text-2xl md:text-3xl font-bold text-center  px-4 transition-opacity duration-700 ${
             mostrarTextoFinal ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >

@@ -5,8 +5,10 @@ import moldura from "/assets/images/moldura-smartphone.webp";
 import gif from "/assets/images/perguntas-calendário-de-treino.gif";
 import imagem from "/assets/images/mulher-alongamento.webp";
 import { motion } from "motion/react";
+import { useState } from "react";
 
 export const Goals = () => {
+  const [loaded, setLoaded] = useState(false);
   return (
     <section
       id="goals"
@@ -23,8 +25,8 @@ export const Goals = () => {
         <div className="flex flex-col gap-6 md:gap-8 max-w-[533px] p-0 md:py-10">
           <motion.h2
             className="text-3xl md:text-5xl font-extrabold"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
@@ -113,8 +115,9 @@ export const Goals = () => {
                     {item.title}
                   </h3>
                   <img
-                    className="w-full"
+                    className={`w-full transition-all duration-700 ${loaded ? 'blur-0' : 'blur-md'}`}
                     src={item.image}
+                    onLoad={() => setLoaded(true)}
                     alt={`Foto de ${item.name}`}
                     loading="lazy"
                   />
