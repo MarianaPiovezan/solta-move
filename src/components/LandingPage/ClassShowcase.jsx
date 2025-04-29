@@ -104,7 +104,7 @@ export const ClassShowcase = () => {
         </div>
       </motion.div>
       </div>
-      <div className="pb-12 md:pb-16">
+      <div className="py-12 md:py-16">
       <div className="flex  flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0">
         <motion.div   initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -191,7 +191,7 @@ export const ClassShowcase = () => {
       </motion.div>
       </div>
       
-      <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0 py-8">
+      <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0 py-12 ">
         <div>
    
         <motion.h2 className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 "    initial={{ opacity: 0, y: 20 }}

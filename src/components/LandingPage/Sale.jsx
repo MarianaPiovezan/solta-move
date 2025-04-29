@@ -5,7 +5,9 @@ import imagem from "/assets/images/plataforma-solta.webp";
 import imagemDispositivoDesktop from "/assets/images/dispositivos-plataforma-solta-desktop.webp";
 import imagemDispositivoMobile from "/assets/images/dispositivos-plataforma-solta-mobile.webp";
 import { motion } from "motion/react";
+import { useInView } from "react-intersection-observer";
 export const Sale = () => {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   return (
     <section
       id="sale"
@@ -42,13 +44,15 @@ export const Sale = () => {
 
         <div
           id="cards"
+          ref={ref}
           className=" max-w-[1080px] h-auto px-6 xl:px-0  flex flex-col md:grid grid-cols-3 lg:gap-12      mx-auto gap-6     "
         >
           {sale.map((item, index) => (
-            <CardSale key={index} cards={item} delay={index} />
+            <CardSale key={index} cards={item} delay={index}  inView={inView}
+            />
           ))}
         </div>
-        <div className="container-margin pt-16 md:grid grid-cols-2 gap-6 md:gap-8 px-6 xl:px-0">
+        <div className="container-margin pt-12 md:pt-16 md:grid grid-cols-2 gap-6 md:gap-8 px-6 xl:px-0">
           <div className="flex  flex-col gap-6 md:gap-8 justify-center   max-w-2xl mx-auto mb-6 md:mb-8 ">
             <div className="flex gap-8 items-center">
               <motion.h2
@@ -96,9 +100,9 @@ export const Sale = () => {
             className="drop-shadow-xl"
             src={imagem}
             alt="Todos os serviços que podem ser adiquiridos "
-            loading="lazy"  initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+            loading="lazy"  initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
             viewport={{ once: true }}
           />
         </div>

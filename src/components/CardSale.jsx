@@ -2,15 +2,17 @@ import iconSelo from "/assets/images/icons/selo-garantia.svg";
 import iconCartao from "/assets/images/icons/cartao-credito.svg";
 import iconRenovacao from "/assets/images/icons/renovacao-automatica.svg";
 import { Button } from "./Button";
-import { motion } from "motion/react";
-export const CardSale = ({ cards = {}, delay="" }) => {
+import {
+  motion,
+  
+} from "motion/react";
+export const CardSale = ({ cards = {}, delay, inView }) => {
   return (
     <>
       {/* Fita "Mais Escolhido" */}
       <motion.div className="flex flex-col items-center justify-center hover:scale-105 w-full  duration-300 ease-in-out overflow-visible "  initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: delay * 0.3 }}
-          viewport={{ once: true }}>
+    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+    transition={{ duration: 0.6, delay: delay * 0.5 }}>
         <div
           className={` bg-brand-pink text-sm font-semibold   text-center py-1   rounded-t-xl shadow-md   w-[65%] md:w-[70%] ${
             cards.category === "Anual"
@@ -53,6 +55,7 @@ export const CardSale = ({ cards = {}, delay="" }) => {
               title={cards.titleButton}
               link={cards.linkButton}
               className="!w-full "
+              target={"_blank"}
             />
             <div className="flex justify-between text-xs leading-3.5 ">
               <figure className="flex flex-col gap-2 items-center text-center">
