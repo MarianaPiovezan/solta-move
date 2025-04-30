@@ -2,10 +2,10 @@
 
   const frases = [
     "Treinos do iniciante ao avançado.",
-    "Para o corpo todo e todos os corpos.",
-    "Novos treinos adicionados toda semana.",
-    "Calendário baseado no seu objetivo.",
-    "Maratonas para enfrentar qualquer desafio e mais.",
+    " Para o corpo todo e todos os corpos.",
+    " Novos treinos adicionados toda semana.",
+    " Calendário baseado no seu objetivo.",
+    " Maratonas para enfrentar qualquer desafio e mais.",
     "Tudo para que você tenha uma saúde de ferro para viver seus sonhos mais ousados."
   ];
 
@@ -37,8 +37,8 @@
     }, []);
 
     return (
-      <div ref={containerRef} className="py-24 bg-brand-gray-100  flex flex-col items-center gap-2">
-        <p className="text-2xl md:text-3xl font-semibold text-center gap-2 leading-relaxed flex  justify-center  px-6  flex-wrap">
+      <div ref={containerRef} className="py-24 bg-brand-gray-100  flex flex-col items-center gap-2 max-w-[1200px]">
+        <p className="text-2xl md:text-3xl font-semibold text-center  leading-relaxed   justify-center  px-6  ">
           {frases.map((frase, index) => (
             <span
               key={index}
@@ -48,7 +48,7 @@
                   : "text-brand-gray-700 font-bold opacity-80 "
               }`}
             >
-              {frase}
+              { frase.indexOf === 5 ?  <br/> + frase : frase }
             </span>
           ))}
         </p>
