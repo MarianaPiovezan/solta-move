@@ -5,13 +5,13 @@
     "Para o corpo todo e todos os corpos.",
     "Novos treinos adicionados toda semana.",
     "Calendário baseado no seu objetivo.",
-    "Maratonas para enfrentar qualquer desafio e mais."
+    "Maratonas para enfrentar qualquer desafio e mais.",
+    "Tudo para que você tenha uma saúde de ferro para viver seus sonhos mais ousados."
   ];
 
   export const HighlightEffect = () => {
     const containerRef = useRef(null);
     const [fraseAtiva, setFraseAtiva] = useState(0);
-    const [mostrarTextoFinal, setMostrarTextoFinal] = useState(false);
 
     useEffect(() => {
       const handleScroll = () => {
@@ -22,18 +22,14 @@
         const scroll = Math.abs(top);
 
         // Calcular qual frase está ativa
-        const scaleFactor = 0.2; // quanto menor, mais tempo cada frase fica
+        const scaleFactor = 0.8; // quanto menor, mais tempo cada frase fica
         const progress = Math.min(1, scroll / altura);
         const index = frases.length - 1 - Math.floor(progress / scaleFactor);
 
         setFraseAtiva(index);
 
         // Mostrar o texto final quando chegar na última frase
-        if (index === 4) {
-          setMostrarTextoFinal(true);
-        } else {
-          setMostrarTextoFinal(false);
-        }
+     
       };
 
       window.addEventListener("scroll", handleScroll);
@@ -41,8 +37,8 @@
     }, []);
 
     return (
-      <div ref={containerRef} className="py-24 bg-brand-gray-100 flex flex-col items-center gap-2">
-        <p className="text-2xl md:text-3xl font-semibold text-center leading-relaxed flex flex-wrap justify-center gap-2 px-6">
+      <div ref={containerRef} className="py-24 bg-brand-gray-100  flex flex-col items-center gap-2">
+        <p className="text-2xl md:text-3xl font-semibold text-center gap-2 leading-relaxed flex  justify-center  px-6  flex-wrap">
           {frases.map((frase, index) => (
             <span
               key={index}
@@ -57,14 +53,8 @@
           ))}
         </p>
 
-        {/* Texto Final */}
-        <p
-          className={`text-2xl md:text-3xl font-bold text-center  px-4 transition-opacity duration-700 ${
-            mostrarTextoFinal ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
-        >
-          Tudo para que você tenha uma saúde de ferro para viver seus sonhos mais ousados.
-        </p>
+      
+   
       </div>
     );
   };
