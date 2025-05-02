@@ -12,18 +12,18 @@ export const Footer = () => {
         </p>
   
         {/* Logo + Redes + Direitos */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 z-10">
-          <div className="flex flex-col gap-2 container-margin">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 z-10">
+          <div className="flex flex-col gap-4 container-margin">
             <img src={logo} alt="Solta Move" className="w-16" loading="lazy" />
-            <div className="flex gap-4 mt-2">
-              <a href="https://www.instagram.com" aria-label="Instagram">
+            <div className="flex gap-4 mt-2 ">
+              <a href="https://www.instagram.com/soltamove/" aria-label="Instagram" target="_blank" className="hover:-translate-y-2 duration-300 ease-in-out">
                 <img src={iconInstragram} alt="Instagram" className="w-8" loading="lazy" />
               </a>
-              <a href="https://www.youtube.com" aria-label="YouTube">
+              <a href="https://www.youtube.com/@soltamove" aria-label="YouTube" className="hover:-translate-y-2 duration-300 ease-in-out" target="_blank" >
                 <img src={iconYoutube} alt="YouTube" className="w-8" loading="lazy" />
               </a>
             </div>
-            <small className="text-sm mt-4">©2025 Solta Move<br />Todos os direitos reservados.</small>
+            <small className="text-sm">©2025 Solta Move<br />Todos os direitos reservados.</small>
           </div>
   
           {/* Imagem decorativa à direita */}
