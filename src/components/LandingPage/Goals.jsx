@@ -78,7 +78,7 @@ export const Goals = () => {
         viewport={{ once: true }}
       >
         <Swiper
-          className="mb-12 sm:block !overflow-visible"
+          className="mb-12 !overflow-visible"
           modules={[Navigation, Pagination, Autoplay]}
           rewind={false}
           spaceBetween={24}

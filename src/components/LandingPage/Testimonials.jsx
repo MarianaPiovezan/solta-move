@@ -44,7 +44,7 @@ export const Testimonials = () => {
         <Swiper
           className="mb-12 sm:block !overflow-visible"
           modules={[Navigation, Pagination, Autoplay]}
-          rewind={true}
+          rewind={false}
           spaceBetween={24}
           slidesPerView={1.5}
           centeredSlides={false}

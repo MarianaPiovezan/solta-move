@@ -21,11 +21,10 @@ export const Advantages = () => {
             Treinar não é sobre o que você vê, é sobre o que você sente.
           </motion.h2>
         </div>
-       
 
         <div className="relative h-[1100px] md:h-[1000px] lg:h-[900px]  ">
           {/* Imagem fixa dentro da seção */}
-          <div className="sticky top-60 z-0 flex justify-center  h-[500px]  ">
+          <div className="sticky top-36 z-0 flex justify-center  h-[350px] md:h-[500px]  ">
             <img
               className="w-[90%] md:w-[60%] object-contain"
               src={image}
@@ -60,7 +59,7 @@ export const Advantages = () => {
       </div>
 
       <motion.blockquote
-        className="max-w-[650px] text-center mx-auto text-lg md:text-xl text-brand-gray-700 px-6 md:px-0 pt-10"
+        className="max-w-[650px] text-center mx-auto text-lg md:text-xl text-brand-gray-700 px-6 md:px-0 "
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
