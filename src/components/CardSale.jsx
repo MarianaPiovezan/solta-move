@@ -14,7 +14,8 @@ export const CardSale = ({ cards = {}, delay, inView }) => {
     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
     transition={{ duration: 0.6, delay: delay * 0.5 }}>
         <div
-          className={` bg-brand-pink text-sm font-semibold   text-center py-1   rounded-t-xl shadow-md   w-[65%] md:w-[70%] ${
+          className={` bg-brand-pink text-sm font-semibold   text-center py-1   rounded-t-xl shadow-md max-w-[236px]  w-[85%] md:w-[80]
+            %] md:max-w-[310px] ${
             cards.category === "Anual"
               ? "block  md:visible"
               : "hidden md:invisible md:block"
@@ -50,7 +51,7 @@ export const CardSale = ({ cards = {}, delay, inView }) => {
             <p className="text-center text-sm font-sm">{cards.subtitlePrice}</p>
           </div>
 
-          <div className="flex flex-col gap-4 md:gap-6 px-6 pb-6">
+          <div className="flex flex-col gap-4 md:gap-6 px-3 md:px-6 pb-6">
             <Button
               title={cards.titleButton}
               link={cards.linkButton}
