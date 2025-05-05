@@ -191,7 +191,7 @@ export const ClassShowcase = () => {
       </motion.div>
       </div>
       
-      <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0 py-12 ">
+      <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0 py-12 !hidden ">
         <div>
    
         <motion.h2 className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 "    initial={{ opacity: 0, y: 20 }}

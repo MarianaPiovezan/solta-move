@@ -2,7 +2,7 @@ export const app = [
     {
       image: "/assets/images/icons/time.svg",
       highlight:
-        'No seu tempo',
+        'No seu tempo.',
         part1:'Os treinos encaixam na sua rotina, não ao contrário. Com',
         part2:'aulas que variam de 5 a 30 min',
         part3:' fica mais fácil reservar tempo para cuidar de você. Em minutos você já estará endorfinada e com o humor muito melhor do que entrou.',
@@ -12,7 +12,7 @@ export const app = [
     {
       image: "/assets/images/icons/rhythm.svg",
       highlight:
-        'No seu ritmo',
+        'No seu ritmo.',
         part1:'Os exercícios têm variações de movimento, intensidade e impacto que se adequam ao seu ritmo do dia. Você decide se quer pegar mais leve ou quebrar seu recorde.',
 
     },

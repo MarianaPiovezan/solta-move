@@ -55,10 +55,21 @@
   }
 }
 
+
+
+
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
 }
+
+#Anual {
+  scroll-margin-top: 330px;
+}
+
+
+
 
 
 

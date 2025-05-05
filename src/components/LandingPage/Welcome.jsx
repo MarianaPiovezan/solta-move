@@ -8,9 +8,9 @@ export const Welcome = () => {
       className="flex flex-col h-auto items-center pt-24 bg-brand-gray-100 overflow-hidden justify-center"
     >
       <HighlightEffect />
-      <div className="bg-brand-yellow py-16 w-full flex flex-col items-center gap-6 md:gap-8 text-center px-6">
+      <div className="bg-brand-yellow py-16 w-full flex flex-col items-center gap-6 md:gap-8 text-center px-6 bg-fixed">
         <motion.h2
-          className="text-3xl font-extrabold"
+          className="text-3xl font-extrabold "
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

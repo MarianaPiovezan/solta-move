@@ -133,7 +133,7 @@ export const Sale = () => {
           viewport={{ once: true }}
         />
       </div>
-      <div className=" py-12 md:py-16 px-6 xl:px-0 max-w-2xl mx-auto flex flex-col items-center gap-2">
+      <div className=" py-12 md:py-16 px-6 xl:px-0 max-w-2xl mx-auto flex flex-col items-center gap-2 hidden">
         <motion.div className="mx-auto bg-brand-gray-100  rounded-2xl md:rounded-3xl p-8 md:p-12  gap-8 flex flex-col" initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.2 }}

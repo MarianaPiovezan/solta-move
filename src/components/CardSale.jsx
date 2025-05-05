@@ -10,7 +10,7 @@ export const CardSale = ({ cards = {}, delay, inView }) => {
   return (
     <>
       {/* Fita "Mais Escolhido" */}
-      <motion.div className="flex flex-col items-center justify-center hover:scale-105 w-full  duration-300 ease-in-out overflow-visible "  initial={{ opacity: 0, x: -30 }}
+      <motion.div id={`${cards.category}`} className="flex flex-col items-center justify-center hover:scale-105 w-full  duration-300 ease-in-out overflow-visible "  initial={{ opacity: 0, x: -30 }}
     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
     transition={{ duration: 0.6, delay: delay * 0.5 }}>
         <div

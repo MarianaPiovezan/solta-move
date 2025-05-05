@@ -38,8 +38,8 @@ export const treinamentos = [
     {
       image: "/assets/images/treinamentos/funcional_corpo_todo_24min.webp",
       title:
-        'Funcional Corpo Todo',
-        subtitle: '24 minutos'
+        'Yoga Intenso',
+        subtitle: '27 minutos'
     },
     {
       image: "/assets/images/treinamentos/monilidade_quadril_12min.webp",
@@ -50,8 +50,8 @@ export const treinamentos = [
     {
       image: "/assets/images/treinamentos/yoga_intenso_27min.webp",
       title:
-      'Yoga Intenso',
-      subtitle: '27 minutos'
+      'Funcional Para o Corpo Todo',
+      subtitle: '24 minutos'
     },
   
   ];
