@@ -14,8 +14,7 @@ export const CardSale = ({ cards = {}, delay, inView }) => {
     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
     transition={{ duration: 0.6, delay: delay * 0.5 }}>
         <div
-          className={` bg-brand-pink text-sm font-semibold   text-center py-1   rounded-t-xl shadow-md max-w-[236px]  w-[85%] md:w-[80]
-            %] md:max-w-[310px] ${
+          className={` bg-brand-pink text-sm font-semibold   text-center py-1   rounded-t-xl shadow-md max-w-[236px]  w-[85%] md:w-[80%] md:max-w-[310px] ${
             cards.category === "Anual"
               ? "block  md:visible"
               : "hidden md:invisible md:block"
