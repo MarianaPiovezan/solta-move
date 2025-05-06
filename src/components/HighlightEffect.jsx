@@ -40,12 +40,12 @@ export const HighlightEffect = () => {
       ref={containerRef}
       className="py-24 bg-brand-gray-100 flex flex-col items-center gap-2 max-w-[1200px] px-6"
     >
-      <p className="text-2xl md:text-3xl  text-center    ">
+      <p className="text-2xl md:text-3xl  text-center leading-snug    ">
         {frases.map((frase, index) => (
           <motion.span
             key={index}
             style={{ opacity: opacities[index] }}
-            className={`transition-all duration-300 font-bold text-brand-dark  ${
+            className={`transition-all duration-300 font-bold text-brand-dark   ${
               index === frases.length - 1 ? "w-full text-center block " : "mr-2"
             }`}
           >
