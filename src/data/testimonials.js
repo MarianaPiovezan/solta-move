@@ -41,7 +41,7 @@ export const testimonials = [
         `“Antes eu ficava morrendo só de caminhar. Hoje tenho viajado para vários lugares que fazemos tudo a pé. Tenho muito mais disposição para fazer as coisas no meu dia a dia.`,
         part2:' Outro dia meu filho falou: ‘Mamãe tá conseguindo abaixar!’.',
         part3:' Isso me marcou muito.”',
-      name: "Juliana, xx anos",
+      name: "Juliana, 34 anos",
     },
     {
       image: "/assets/images/depoimentos/leticia.webp",

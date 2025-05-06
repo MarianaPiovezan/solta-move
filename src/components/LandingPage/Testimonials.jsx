@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Testimonials = () => {
+
+  
   return (
     <section
       id="testimonials"
