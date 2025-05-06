@@ -1,60 +1,58 @@
-  import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
+import {
+  motion,
+  useScroll,
+  useTransform
+} from "framer-motion";
 
-  const frases = [
-    "Treinos do iniciante ao avançado.",
-    " Para o corpo todo e todos os corpos.",
-    " Novos treinos adicionados toda semana.",
-    " Calendário baseado no seu objetivo.",
-    " Maratonas para enfrentar qualquer desafio e mais.",
-    "Tudo para que você tenha uma saúde de ferro para viver seus sonhos mais ousados."
+const frases = [
+  "Treinos do iniciante ao avançado.",
+  "Para o corpo todo e todos os corpos.",
+  "Novos treinos adicionados toda semana.",
+  "Calendário baseado no seu objetivo.",
+  "Maratonas para enfrentar qualquer desafio e mais.",
+  "Tudo para que você tenha uma saúde de ferro para viver seus sonhos mais ousados."
+];
+
+function useFraseOpacities(scrollYProgress) {
+  return [
+    useTransform(scrollYProgress, [0, 0.16], [0.5, 1]),
+    useTransform(scrollYProgress, [0.16, 0.30], [0.5, 1]),
+    useTransform(scrollYProgress, [0.30, 0.40], [0.5, 1]),
+    useTransform(scrollYProgress, [0.40, 0.45], [0.5, 1]),
+    useTransform(scrollYProgress, [0.45, 0.50], [0.5, 1]),
+    useTransform(scrollYProgress, [0.50, 0.60], [0.5, 1])
   ];
+}
 
-  export const HighlightEffect = () => {
-    const containerRef = useRef(null);
-    const [fraseAtiva, setFraseAtiva] = useState(0);
+export const HighlightEffect = () => {
+  const containerRef = useRef(null);
 
-    useEffect(() => {
-      const handleScroll = () => {
-        if (!containerRef.current) return;
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
 
-        const { top } = containerRef.current.getBoundingClientRect();
-        const altura = containerRef.current.offsetHeight;
-        const scroll = Math.abs(top);
+  const opacities = useFraseOpacities(scrollYProgress); 
 
-        // Calcular qual frase está ativa
-        const scaleFactor = 0.8; // quanto menor, mais tempo cada frase fica
-        const progress = Math.min(1, scroll / altura);
-        const index = frases.length - 1 - Math.floor(progress / scaleFactor);
-
-        setFraseAtiva(index);
-
-        // Mostrar o texto final quando chegar na última frase
-     
-      };
-
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
-    return (
-      <div ref={containerRef} className="py-24 bg-brand-gray-100  flex flex-col items-center gap-2 max-w-[1200px]">
-        <p className="text-2xl md:text-3xl font-semibold text-center  leading-relaxed   justify-center  px-6  ">
-          {frases.map((frase, index) => (
-            <span
-              key={index}
-              className={`transition-all duration-300 leading-none ${
-                fraseAtiva === index
-                  ? "text-brand-dark font-bold opacity-100 "
-                  : "text-brand-gray-700 font-bold opacity-80 "
-              }`}
-            >
-              { frase.indexOf === 5 ?  <br/> + frase : frase }
-            </span>
-          ))}
-        </p>
-
-      
-   
-      </div>
-    );
-  };
+  return (
+    <div
+      ref={containerRef}
+      className="py-24 bg-brand-gray-100 flex flex-col items-center gap-2 max-w-[1200px] px-6"
+    >
+      <p className="text-2xl md:text-3xl  text-center    ">
+        {frases.map((frase, index) => (
+          <motion.span
+            key={index}
+            style={{ opacity: opacities[index] }}
+            className={`transition-all duration-300 font-bold text-brand-dark  ${
+              index === frases.length - 1 ? "w-full text-center block " : "mr-2"
+            }`}
+          >
+            {frase}
+          </motion.span>
+        ))}
+      </p>
+    </div>
+  );
+};
