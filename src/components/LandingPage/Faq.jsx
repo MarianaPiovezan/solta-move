@@ -2,7 +2,7 @@ import { useState } from "react";
 import { faq } from "../../data/faq";
 import { AccordionFaq } from "../AccordionFaq";
 import { Button } from "../Button";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
 
 export const Faq = () => {
