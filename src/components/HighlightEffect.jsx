@@ -38,7 +38,7 @@ export const HighlightEffect = () => {
   return (
     <div
       ref={containerRef}
-      className="pb-24 bg-brand-gray-100 flex flex-col items-center gap-2 max-w-[1200px] px-6"
+      className="pb-20 md:pb-24 bg-brand-gray-100 flex flex-col items-center gap-2 max-w-[1200px] px-6"
     >
       <p className="text-2xl md:text-3xl  text-center leading-snug    ">
         {frases.map((frase, index) => (

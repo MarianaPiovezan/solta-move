@@ -84,12 +84,12 @@ export const Sale = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}>
-              <strong className="font-bold text-brand-dark">
+              <strong className="font-bold text-brand-dark mr-1">
                 {" "}
                 Ao assinar um dos nossos planos, você tem 15 dias para
-                experimentar tudo que oferecemos.
+                experimentar tudo que oferecemos. 
               </strong>
-              A chance dos treinos da Solta Move não mexerem com você é muito
+               A chance dos treinos da Solta Move não mexerem com você é muito
               pequena. Mas ninguém é perfeita, nem mesmo a Solta Move. Se você
               não se sentir mais viva, confiante e saudável, basta cancelar sua
               assinatura dentro deste período da garantia. Reembolsamos 100% do
