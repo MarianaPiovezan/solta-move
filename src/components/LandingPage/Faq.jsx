@@ -57,7 +57,7 @@ export const Faq = () => {
             className="w-full !bg-whatsapp"
             title={"Tirar dúvida no Whatsapp"}
             icon={true}
-            link="https://wa.me/5555279990555?text=Ol%C3%A1%20gostaria%20de%20saber%20informa%C3%A7%C3%B5es%20sobre%20a%20Solta%20Move."
+            link="https://wa.me/5527999055514?text=Ol%C3%A1%20gostaria%20de%20saber%20informa%C3%A7%C3%B5es%20sobre%20a%20Solta%20Move."
             target={"_blank"}
           />
         </motion.div>

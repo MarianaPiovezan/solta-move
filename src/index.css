@@ -58,6 +58,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
+  scroll-margin-top: 0;
 }
 
 #Anual {
