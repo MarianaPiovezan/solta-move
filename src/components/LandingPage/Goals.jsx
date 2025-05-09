@@ -5,7 +5,7 @@ import moldura from "/assets/images/moldura-smartphone.webp";
 import gif from "/assets/images/perguntas-calendário-de-treino.gif";
 import imagem from "/assets/images/mulher-alongamento.webp";
 import { motion } from "motion/react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Goals = () => {
  
@@ -110,13 +110,13 @@ export const Goals = () => {
                     {item.title}
                   </h3>
                   
-                  {/* <LazyLoadImage
+                  <img
                    src={item.image}
                    alt={`Foto de ${item.name}`}
-                   effect="blur"
+                   loading="lazy"
                    className="w-full h-full"
                    
-                  /> */}
+                  />
                 </div>
                 <figcaption className="text-brand-gray-700 pt-1 mt-3 text-sm md:text-base">
                   <strong className="text-brand-dark">{item.highlight}</strong>{" "}
