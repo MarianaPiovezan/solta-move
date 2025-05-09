@@ -175,7 +175,7 @@ export const Staff = () => {
             consciência.
           </motion.p>
         </div>
-        <video
+        {/* <video
           src={video}  
           autoPlay
           loop
@@ -184,7 +184,7 @@ export const Staff = () => {
           className="w-full h-auto"
         >
           Seu navegador não suporta vídeo HTML5.
-        </video>
+        </video> */}
       </div>
       <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8   container-margin px-6 xl:px-0  ">
         <div>
