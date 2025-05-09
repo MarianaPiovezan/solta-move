@@ -96,7 +96,7 @@ export const Staff = () => {
         Sem forçar a barra.
       </motion.h3>
       <motion.div
-        id="treinamentos"
+        id="trainers-swiper"
         className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   "
         initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -111,8 +111,8 @@ export const Staff = () => {
           slidesPerView={1.5}
           centeredSlides={false}
           navigation={{
-            prevEl: "#treinamentos .swiper-button-prev",
-            nextEl: "#treinamentos .swiper-button-next",
+            prevEl: "#trainers-swiper .swiper-button-prev",
+            nextEl: "#trainers-swiper .swiper-button-next",
           }}
           breakpoints={{
             520: {
@@ -176,7 +176,7 @@ export const Staff = () => {
           </motion.p>
         </div>
         <video
-          src={video} // ou use o import se estiver na pasta src
+          src={video}  
           autoPlay
           loop
           muted

@@ -9,16 +9,13 @@ import { useInView } from "react-intersection-observer";
 export const Sale = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   return (
-    <>
-  
-
-<section
-  id="sale"
-  aria-label="Confira todos os nossos planos"
-  className=" scroll-mt-22"
->
-      <div className="  bg-brand-gray-100 pt-12 md:pt-16 ">
-        <div  className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto pb-6 md:pb-8">
+    <section
+      id="sale"
+      aria-label="Confira todos os nossos planos"
+      className="scroll-mt-20"
+    >
+      <div className="  bg-brand-gray-100 py-12 md:py-16 ">
+        <div className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
           <motion.h2
             className="text-3xl md:text-5xl font-extrabold "
             initial={{ opacity: 0, y: 30 }}
@@ -43,15 +40,12 @@ export const Sale = () => {
               Escolha abaixo o plano que mais combina com você.{" "}
             </strong>
           </motion.p>
-          </div>
-          </div>
-        </section>
-        <section >
-        <div className="  bg-brand-gray-100 pb-12 md:pb-16 ">
+        </div>
+
         <div
           id="cards"
           ref={ref}
-          className=" max-w-[1080px] h-auto px-6 xl:px-0  flex flex-col md:grid grid-cols-3 lg:gap-12      mx-auto gap-6  -scroll-mt-[500px] md:scroll-mt-[200px]   "
+          className=" max-w-[1080px] h-auto px-6 xl:px-0  flex flex-col md:grid grid-cols-3 lg:gap-12      mx-auto gap-6     "
         >
           {sale.map((item, index) => (
             <CardSale key={index} cards={item} delay={index}  inView={inView}
@@ -112,8 +106,7 @@ export const Sale = () => {
             viewport={{ once: true }}
           />
         </div>
-        </div>
-      
+      </div>
       <div className="container-margin pt-12 md:pt-16 flex items-center flex-col gap-6  px-6 xl:px-0">
         <motion.h2 className="text-3xl md:text-5xl font-extrabold text-center " initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -166,6 +159,5 @@ export const Sale = () => {
         </motion.p>
       </div>
     </section>
-    </>
   );
 };
