@@ -1,22 +1,16 @@
+import { motion } from "motion/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { trainers, contents } from "../../data/trainers";
 import estrela from "/assets/images/icons/star.svg";
 import video from "/assets/images/ola-treinos-divertidos.mp4";
 import imagem from "/assets/images/vida-saudavel-sauda-voce.webp";
-import { motion } from "motion/react";
 
 export const GroupStars = () => {
   return (
     <div className="flex gap-2">
       {[1, 2, 3, 4, 5].map((index) => (
-        <img
-          className="w-5"
-          key={index}
-          src={estrela}
-          alt="estrela"
-          loading="lazy"
-        />
+        <img className="w-5" key={index} src={estrela} alt="estrela" />
       ))}
     </div>
   );
@@ -27,7 +21,7 @@ export const Staff = () => {
     <section
       id="trainers"
       aria-label="Fique por dentro da plataforma"
-      className="overflow-hidden py-12 md:py-16  "
+      className="relative overflow-hidden py-12 md:py-16"
     >
       <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
         <motion.h2
@@ -41,10 +35,13 @@ export const Staff = () => {
         </motion.h2>
       </div>
       <div className="container-margin px-6 xl:px-0 flex flex-col md:flex-row gap-8  items-stretch">
-        <motion.div className="flex flex-col gap-6 md:gap-8 md:w-1/2 items-stretch" initial={{ opacity: 0, y: 20 }}
+        <motion.div
+          className="flex flex-col gap-6 md:gap-8 md:w-1/2 items-stretch"
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          viewport={{ once: true }}>
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
           <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-gray-800 text-lg md:text-xl  self-stretch  h-full">
             <p>
               Não precisa nem levantar a mão. Nosso time de levantamento de
@@ -70,15 +67,22 @@ export const Staff = () => {
             </div>
           </div>
         </motion.div>
-        <motion.div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-dark  md:text-lg  font-bold md:w-1/2 grid grid-cols-2 gap-6 text-center " initial={{ opacity: 0, y: 20 }}
+        <motion.div
+          className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-dark  md:text-lg  font-bold md:w-1/2 grid grid-cols-2 gap-6 text-center "
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.6 }}
-          viewport={{ once: true }}>
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
           {trainers.map((item, index) => (
             <figure key={index} className="flex flex-col items-center gap-1">
               {" "}
               <div className="overflow-hidden rounded-2xl aspect-9/7">
-                <img src={item.image} alt={item.name} />
+                <img
+                  src={item.image}
+                  alt={`Foto da treinadora ${item.name}`}
+                  loading="lazy"
+                />
               </div>{" "}
               <figcaption className="text-sm md:text-base leading-none font-bold pt-1 max-w-[90px] md:max-w-[300px] ">
                 {item.name}
@@ -87,10 +91,13 @@ export const Staff = () => {
           ))}
         </motion.div>
       </div>
-      <motion.h3 className="text-2xl md:text-3xl container-margin py-6 md:py-8 font-extrabold px-6  xl:px-0"  initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}>
+      <motion.h3
+        className="text-2xl md:text-3xl container-margin py-6 md:py-8 font-extrabold px-6  xl:px-0"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         A força que você precisa.
         <br />
         Sem forçar a barra.
@@ -99,9 +106,9 @@ export const Staff = () => {
         id="trainers-swiper"
         className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   "
         initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.5 }}
-          viewport={{ once: true }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        viewport={{ once: true }}
       >
         <Swiper
           className="mb-12 sm:block !overflow-visible"
@@ -158,17 +165,23 @@ export const Staff = () => {
       </motion.div>
       <div className="py-12 md:py-16">
         <div className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
-          <motion.h2 className="text-3xl md:text-5xl font-extrabold "  initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.2 }}
-          viewport={{ once: true }}>
+          <motion.h2
+            className="text-3xl md:text-5xl font-extrabold "
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             Adeus, Treinos punitivos. <br />
             Olá, treinos divertidos.
           </motion.h2>
-          <motion.p className="text-lg md:text-xl text-brand-gray-700"  initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.5 }}
-          viewport={{ once: true }} >
+          <motion.p
+            className="text-lg md:text-xl text-brand-gray-700"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
             Fazer exercício na força do ódio, é coisa do passado. A Solta Move
             está aqui pra te convidar a descobrir uma nova maneira de se
             movimentar. De forma gentil, divertida e eficiente. Sem peso na
@@ -176,7 +189,7 @@ export const Staff = () => {
           </motion.p>
         </div>
         <video
-          src={video}  
+          src={video}
           autoPlay
           loop
           muted
@@ -188,17 +201,23 @@ export const Staff = () => {
       </div>
       <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8   container-margin px-6 xl:px-0  ">
         <div>
-          <motion.h2 className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 "  initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.2 }}
-          viewport={{ once: true }}>
+          <motion.h2
+            className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 "
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             Sua vida saudável saúda você.
           </motion.h2>
 
-          <motion.p className="text-lg md:text-xl text-brand-gray-700 "  initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.5 }}
-          viewport={{ once: true }}>
+          <motion.p
+            className="text-lg md:text-xl text-brand-gray-700 "
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
             No passeio em família, na realização de um sonho ou quando toca sua
             música preferida na festa para você descer até o chão. A última
             coisa que você quer é não estar com a saúde em dia para aproveitar
@@ -211,16 +230,19 @@ export const Staff = () => {
           </motion.p>
         </div>
 
-        <motion.img
-          src={imagem}
-          className="w-[80%] justify-self-center "
-          loading="lazy"
-          alt="Imagem de uma mulher se divertindo"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          viewport={{ once: true }}
-        />
+        <motion.div
+           initial={{ opacity: 0, y: 30 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.8, delay: 0.3 }}
+           viewport={{ once: true }}
+        >
+          <img
+            src={imagem}
+            className="w-[80%] justify-self-center "
+            loading="lazy"
+            alt="Imagem de uma mulher se divertindo"
+          />
+        </motion.div>
       </div>
     </section>
   );

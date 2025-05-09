@@ -12,7 +12,7 @@ export const Sale = () => {
     <section
       id="sale"
       aria-label="Confira todos os nossos planos"
-      className="scroll-mt-20"
+      className="scroll-mt-14"
     >
       <div className="  bg-brand-gray-100 py-12 md:py-16 ">
         <div className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
@@ -23,7 +23,7 @@ export const Sale = () => {
             transition={{ duration: 1.2, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Comece a se mover para ir ainda mais longe.
+            Comece a se mover e vá ainda mais longe.
           </motion.h2>
           <motion.p
             className="text-lg md:text-xl text-brand-gray-800"
