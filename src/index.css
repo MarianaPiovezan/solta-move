@@ -28,12 +28,12 @@
 
 html{
   scroll-behavior: smooth;
+  scrol-padding-top: 0;
 }
 
 
-#Anual {
-  scroll-margin-top: 330px;
-}
+
+
 
 body{
   font-family: 'Archivo', sans-serif;
