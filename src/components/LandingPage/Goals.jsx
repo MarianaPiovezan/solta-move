@@ -131,13 +131,13 @@ export const Goals = () => {
           <div
             className="swiper-button-prev !w-8 prev !pl-1"
             role="button"
-            aria-label="Depoimento anterior"
+            aria-label="Anterior"
             tabIndex={0}
           />
           <div
             className="swiper-button-next !w-8 next !pr-1"
             role="button"
-            aria-label="Próximo depoimento"
+            aria-label="Próximo "
             tabIndex={0}
           />
         </div>
@@ -154,8 +154,8 @@ export const Goals = () => {
           className="self-start md:self-center leading-none"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 * 0.3 }}
-          viewport={{ once: false }}
+          transition={{ duration: 1, delay:  0.3 }}
+          viewport={{ once: true }}
         >
           Para o <br /> corpo todo
         </motion.h3>
@@ -167,14 +167,14 @@ export const Goals = () => {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         />
         <motion.h3
           className="self-end md:self-center leading-none text-right md:text-left"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 2 * 0.3 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           e todos <br /> os corpos
         </motion.h3>
