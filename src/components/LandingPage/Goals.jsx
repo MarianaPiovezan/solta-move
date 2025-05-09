@@ -13,7 +13,7 @@ export const Goals = () => {
     <section
       id="goals"
       aria-label="Definir objetivos"
-      className="overflow-hidden pt-12 md:pt-16"
+      className=" pt-12 md:pt-16"
     >
       <motion.div
         className="flex flex-col lg:flex-row px-6 gap-6 lg:gap-16 justify-center items-center mx-6 mb-8 bg-brand-dark rounded-2xl md:rounded-3xl container-margin text-brand-light pt-8 md:px-24"
@@ -48,7 +48,7 @@ export const Goals = () => {
             src={gif}
             alt="Tela de exemplo do aplicativo com opções de objetivo"
             className="relative w-[55%] max-w-[350px] -bottom-0 left-1/2 -translate-x-1/2"
-            loading="lazy"
+            
           />
           <img
             src={moldura}
@@ -110,13 +110,13 @@ export const Goals = () => {
                     {item.title}
                   </h3>
                   
-                  <LazyLoadImage
+                  {/* <LazyLoadImage
                    src={item.image}
                    alt={`Foto de ${item.name}`}
                    effect="blur"
                    className="w-full h-full"
                    
-                  />
+                  /> */}
                 </div>
                 <figcaption className="text-brand-gray-700 pt-1 mt-3 text-sm md:text-base">
                   <strong className="text-brand-dark">{item.highlight}</strong>{" "}
