@@ -52,7 +52,7 @@ export const Faq = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}>
-          <Button className="w-full" title={"Escolher plano"} link="#Anual" />
+          <Button className="w-full" title={"Escolher plano"} scrollId={"Anual"} offset={300} />
           <Button
             className="w-full !bg-whatsapp"
             title={"Tirar dúvida no Whatsapp"}
