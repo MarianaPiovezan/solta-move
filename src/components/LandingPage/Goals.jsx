@@ -13,7 +13,7 @@ export const Goals = () => {
     <section
       id="goals"
       aria-label="Definir objetivos"
-      className=" pt-12 md:pt-16"
+      className=" pt-12 md:pt-16 overflow-hidden"
     >
       <motion.div
         className="flex flex-col lg:flex-row px-6 gap-6 lg:gap-16 justify-center items-center mx-6 mb-8 bg-brand-dark rounded-2xl md:rounded-3xl container-margin text-brand-light pt-8 md:px-24"
