@@ -22,7 +22,7 @@ function App() {
    <BtnWatsapp/>
    <Hero/>
    <Welcome/>
-   {/* <Testimonials/> */}
+   <Testimonials/>
    {/* <Goals/> */}
    {/* <Activities/> */}
    {/* <ClassShowcase/> */}
