@@ -23,7 +23,7 @@ function App() {
    <Hero/>
    <Welcome/>
    <Testimonials/>
-   {/* <Goals/> */}
+   <Goals/>
    {/* <Activities/> */}
    {/* <ClassShowcase/> */}
    {/* <Advantages/> */}
