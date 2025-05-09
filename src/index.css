@@ -55,10 +55,11 @@
   }
 }
 
-html {
+html{
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
-  scroll-margin-top: 0;
+}
+#sale {
+  scroll-margin-top: 90px;
 }
 
 #Anual {
