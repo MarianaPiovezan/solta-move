@@ -10,11 +10,11 @@ export const Sale = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   return (
     <section
-      id="sale"
+  
       aria-label="Confira todos os nossos planos"
-      className="scroll-mt-20"
+      // className="scroll-mt-20"
     >
-      <div className="  bg-brand-gray-100 py-12 md:py-16 ">
+      <div     id="sale" className="  bg-brand-gray-100 py-12 md:py-16 ">
         <div className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
           <motion.h2
             className="text-3xl md:text-5xl font-extrabold "
