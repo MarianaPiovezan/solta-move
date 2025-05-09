@@ -167,14 +167,14 @@ export const Goals = () => {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         />
         <motion.h3
           className="self-end md:self-center leading-none text-right md:text-left"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 2 * 0.3 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           e todos <br /> os corpos
         </motion.h3>

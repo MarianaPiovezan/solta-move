@@ -24,7 +24,7 @@ function App() {
    <Welcome/>
    <Testimonials/>
    <Goals/>
-   {/* <Activities/> */}
+   <Activities/>
    {/* <ClassShowcase/> */}
    {/* <Advantages/> */}
    {/* <Staff/> */}
