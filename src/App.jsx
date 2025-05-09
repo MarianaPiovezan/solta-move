@@ -21,11 +21,11 @@ function App() {
    <Menu/>
    <BtnWatsapp/>
    <Hero/>
-   <Welcome/>
+   {/* <Welcome/>
    <Testimonials/>
    <Goals/>
    <Activities/>
-   <ClassShowcase/>
+   <ClassShowcase/> */}
    {/* <Advantages/> */}
    {/* <Staff/> */}
    <Sale/>
