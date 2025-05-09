@@ -31,6 +31,10 @@ html{
 
 }
 
+#Anual{
+  scroll-margin-top: 300px;
+}
+
 
 body{
   font-family: 'Archivo', sans-serif;

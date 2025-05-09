@@ -20,8 +20,8 @@ export const Menu = () => {
           <li>
             <Button
               title={"Experimente por 15 dias"}
-              scrollId="sale"
-              offset={80}
+              link="#sale"
+            
               primary={false}
             />
           </li>

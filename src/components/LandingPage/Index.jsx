@@ -40,7 +40,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            <Button title={"Experimente por 15 dias"} scrollId={"sale"} offset={80} />
+            <Button title={"Experimente por 15 dias"} link="#sale" />
           </motion.div>
 
         </div>
