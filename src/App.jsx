@@ -26,8 +26,8 @@ function App() {
    <Goals/>
    <Activities/>
    <ClassShowcase/>
-   <Advantages/>
-   <Staff/>
+   {/* <Advantages/> */}
+   {/* <Staff/> */}
    <Sale/>
    <Faq/>
    <Footer/>

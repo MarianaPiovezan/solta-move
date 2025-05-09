@@ -12,7 +12,7 @@ export const Sale = () => {
     <section
   
       aria-label="Confira todos os nossos planos"
-      // className="scroll-mt-20"
+      className="scroll-mt-20"
     >
       <div     id="sale" className="  bg-brand-gray-100 py-12 md:py-16 ">
         <div className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
