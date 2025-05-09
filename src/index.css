@@ -26,6 +26,22 @@
   font-style: normal;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+
+#Anual {
+  scroll-margin-top: 330px;
+}
+
+body{
+  font-family: 'Archivo', sans-serif;
+  
+  
+}
+
+
 #sticky {
   position: sticky;
   position: -webkit-sticky;
@@ -55,22 +71,6 @@
   }
 }
 
-html{
-  scroll-behavior: smooth;
-}
-#sale {
-  scroll-margin-top: 90px;
-}
-
-#Anual {
-  scroll-margin-top: 330px;
-}
-
-body{
-  font-family: 'Archivo', sans-serif;
-  
-  
-}
 
 
 
