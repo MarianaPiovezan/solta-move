@@ -7,13 +7,12 @@ export const ScrollToHash = () => {
   useEffect(() => {
     if (!hash) return;
 
-    // Espera a animação (Framer Motion) terminar
     const timeout = setTimeout(() => {
       const element = document.querySelector(hash);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
-    }, 600); 
+    }, 800); 
 
     return () => clearTimeout(timeout);
   }, [hash]);

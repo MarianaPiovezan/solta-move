@@ -107,7 +107,7 @@ export const Staff = () => {
         className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   "
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
+        transition={{ duration: 0.8,  }}
         viewport={{ once: true }}
       >
         <Swiper
@@ -205,7 +205,7 @@ export const Staff = () => {
             className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 "
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
             Sua vida saudável saúda você.
@@ -215,7 +215,7 @@ export const Staff = () => {
             className="text-lg md:text-xl text-brand-gray-700 "
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
             No passeio em família, na realização de um sonho ou quando toca sua
@@ -233,7 +233,7 @@ export const Staff = () => {
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            whileInView={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.8, delay: 0.3 }}
+           transition={{ duration: 0.8 }}
            viewport={{ once: true }}
         >
           <img

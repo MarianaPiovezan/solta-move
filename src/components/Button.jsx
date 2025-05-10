@@ -3,11 +3,14 @@ import iconWhatsapp from "/assets/images/icons/whatsapp.svg";
 export const Button = ({ link = "", title, primary = true, className = '', icon = false, target }) => {
   const handleClick = (e) => {
     if (link.startsWith("#")) {
-      e.preventDefault(); 
+      e.preventDefault();
       const id = link.replace("#", "");
       const targetElement = document.getElementById(id);
+  
       if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
+        setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }, 800);
       }
     }
   };
