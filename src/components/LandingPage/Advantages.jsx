@@ -1,8 +1,12 @@
 import { advantages } from "../../data/advantages";
 import image from "/assets/images/e-sobre-o-que-sente.webp";
-import { motion } from "framer-motion";
+import { useInView } from "../../hooks/useInView";
 
 export const Advantages = () => {
+  const [ref1, inView1] = useInView();
+  const [ref2, inView2] = useInView();
+  const [ref3, inView3] = useInView();
+
   return (
     <section
       id="advantages"
@@ -11,15 +15,14 @@ export const Advantages = () => {
     >
       <div className="pb-12 md:pb-16">
         <div className="flex flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0">
-          <motion.h2
-            className="text-3xl md:text-5xl lg:max-w-[740px] font-extrabold mx-auto text-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.3 }}
-            viewport={{ once: true }}
+          <h2
+            ref={ref1}
+            className={`fade-up ${
+              inView1 ? "in-view" : ""
+            } text-3xl md:text-5xl lg:max-w-[740px] font-extrabold mx-auto text-center`}
           >
             Treinar não é sobre o que você vê, é sobre o que você sente.
-          </motion.h2>
+          </h2>
         </div>
 
         <div className="relative h-[1100px] md:h-[1000px] lg:h-[900px]  ">
@@ -34,12 +37,12 @@ export const Advantages = () => {
           </div>
 
           {/* Cards que rolam sobre a imagem */}
-          <motion.div
-            className="absolute top-0 z-10 w-full container-margin grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 px-6 xl:px-0 gap-6 !max-w-[1038px] mx-auto items-stretch pt-56 left-[50%] -translate-x-[50%]"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            viewport={{ once: true }}
+          <div
+            ref={ref2}
+            className={`fade-up ${
+              inView2 ? "in-view" : ""
+            } absolute top-0 z-10 w-full container-margin grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 px-6 xl:px-0 gap-6 !max-w-[1038px] mx-auto items-stretch pt-56 left-[50%] -translate-x-[50%]`}
+            
           >
             {advantages.map((item, index) => (
               <div
@@ -54,12 +57,15 @@ export const Advantages = () => {
                 </p>
               </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
 
-      <motion.blockquote
-        className="max-w-[650px] text-center mx-auto text-lg md:text-xl text-brand-gray-700 px-6 md:px-0 "
+      <blockquote
+       ref={ref3}
+        className={`fade-up ${
+          inView3 ? "in-view" : ""
+        } max-w-[650px] text-center mx-auto text-lg md:text-xl text-brand-gray-700 px-6 md:px-0 `}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -71,7 +77,7 @@ export const Advantages = () => {
         <strong className="text-brand-dark">
           a Solta Move será sua aliada durante toda a jornada.
         </strong>
-      </motion.blockquote>
+      </blockquote>
     </section>
   );
 };
