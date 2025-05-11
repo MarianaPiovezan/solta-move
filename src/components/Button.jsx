@@ -10,15 +10,19 @@ export const Button = ({ link = "", title, primary = true, className = '', icon 
       const targetElement = document.getElementById(id);
   
       if (targetElement) {
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
-          });
+        const ro = new ResizeObserver(() => {
+          // Quando o layout se estabilizar
+          targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+          ro.disconnect();
         });
+  
+        ro.observe(targetElement);
         console.log( targetElement.getBoundingClientRect() )
       }
     }
   };
+
+
 
   const commonClasses = `md:text-lg font-extrabold flex items-center justify-center gap-4 rounded-full py-3 px-4 md:px-8 border-2 border-brand-dark text-center ${primary ? "text-brand-dark bg-brand-yellow" : "text-brand-light bg-brand-blue-dark"} hover:brightness-125 duration-300 ease-in-out leading-none ${className}`;
 
