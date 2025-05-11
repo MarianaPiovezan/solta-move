@@ -1,5 +1,4 @@
 import iconWhatsapp from "/assets/images/icons/whatsapp.svg";
-import { HashLink } from 'react-router-hash-link';
 
 export const Button = ({ link = "", title, primary = true, className = '', icon = false, target }) => {
   const isInternalAnchor = link.startsWith("#");
@@ -9,14 +8,14 @@ export const Button = ({ link = "", title, primary = true, className = '', icon 
       e.preventDefault();
       const id = link.replace("#", "");
       const targetElement = document.getElementById(id);
-
+  
       if (targetElement) {
-        // Tira delay — rola direto
-        setTimeout(() => {
-          targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 1000);
-
-        console.log(targetElement)
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        });
+        console.log( targetElement.getBoundingClientRect() )
       }
     }
   };
