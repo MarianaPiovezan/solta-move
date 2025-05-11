@@ -18,19 +18,19 @@ export const Sale = () => {
         <div className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
           <motion.h2
             className="text-3xl md:text-5xl font-extrabold "
-            // initial={{ opacity: 0, y: 30 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 1.2, delay: 0.2 }}
-            // viewport={{ once: true }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.2 }}
+            viewport={{ once: true }}
           >
             Comece a se mover e vá ainda mais longe.
           </motion.h2>
           <motion.p
             className="text-lg md:text-xl text-brand-gray-800"
-            // initial={{ opacity: 0, y: 30 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 1.2, delay: 0.5 }}
-            // viewport={{ once: true }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.5 }}
+            viewport={{ once: true }}
           >
             Chegou a hora de cuidar de você e da sua saúde. Tenha acesso a
             diversas modalidades de treinos divertidos, Calendário, Maratonas,
@@ -56,10 +56,10 @@ export const Sale = () => {
             <div className="flex gap-8 items-center">
               <motion.h2
                 className="text-3xl md:text-5xl font-extrabold "
-                // initial={{ opacity: 0, y: 30 }}
-                // whileInView={{ opacity: 1, y: 0 }}
-                // transition={{ duration: 1 }}
-                // viewport={{ once: true }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
               >
                 Endorfina <br />
                 garantida <br />
@@ -70,21 +70,21 @@ export const Sale = () => {
                 alt="Selo de Garantia"
                 className="w-[30%]"
                 loading="lazy"
-                // initial={{ opacity: 0, scale: 0 }}
-                // animate={{ opacity: 1, scale: 1 }}
-                // transition={{
-                //   duration: 0.4,
-                //   scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
-                // }}
-                // viewport={{ once: true }}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.4,
+                  scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+                }}
+                viewport={{ once: true }}
               />
             </div>
             <motion.p
               className="text-lg md:text-xl text-brand-gray-800"
-              // initial={{ opacity: 0, y: 50 }}
-              // whileInView={{ opacity: 1, y: 0 }}
-              // transition={{ duration: 1 }}
-              // viewport={{ once: true }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
             >
               <strong className="font-bold text-brand-dark mr-1">
                 {" "}
@@ -102,20 +102,20 @@ export const Sale = () => {
             className="drop-shadow-xl"
             src={imagem}
             alt="Todos os serviços que podem ser adiquiridos "
-            // initial={{ opacity: 0, y: 30 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 1, delay: 0.5 }}
-            // viewport={{ once: true }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
           />
         </div>
       </div>
       <div className="container-margin pt-12 md:pt-16 flex items-center flex-col gap-6  px-6 xl:px-0">
         <motion.h2
           className="text-3xl md:text-5xl font-extrabold text-center "
-          // initial={{ opacity: 0, y: 30 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           Treine no seu dispositivo favorito.
         </motion.h2>
@@ -123,28 +123,28 @@ export const Sale = () => {
           src={imagemDispositivoDesktop}
           alt="Plataforma solta em diversos dispositivos"
           className="w-[80%] lg:w-[90%] hidden md:block"
-          // initial={{ opacity: 0, y: 50 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
         />
         <motion.img
           src={imagemDispositivoMobile}
           alt="Plataforma solta em diversos dispositivos"
           className="w-full block md:hidden"
-          // initial={{ opacity: 0, y: 50 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
         />
       </div>
       <div className=" py-12 md:py-16 px-6 xl:px-0 max-w-2xl mx-auto flex flex-col items-center gap-2 hidden">
         <motion.div
           className="mx-auto bg-brand-gray-100  rounded-2xl md:rounded-3xl p-8 md:p-12  gap-8 flex flex-col"
-          // initial={{ opacity: 0, y: 30 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1.2, delay: 0.2 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 0.2 }}
+          viewport={{ once: true }}
         >
           <h3 className="text-3xl md:text-5xl font-extrabold text-center ">
             Uma Move a Outra.
@@ -161,10 +161,10 @@ export const Sale = () => {
         </motion.div>
         <motion.p
           className="text-sm text-brand-gray-700 mx-auto"
-          // initial={{ opacity: 0, y: 50 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1.2, delay: 0.5 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 0.5 }}
+          viewport={{ once: true }}
         >
           *Fonte: Datafolha Instituto de Pesquisas
         </motion.p>

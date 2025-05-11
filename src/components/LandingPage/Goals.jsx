@@ -13,14 +13,14 @@ export const Goals = () => {
     <section
       id="goals"
       aria-label="Definir objetivos"
-      className=" pt-12 md:pt-16 overflow-hidden"
+      className=" pt-12 md:pt-16 ove"
     >
       <motion.div
         className="flex flex-col lg:flex-row px-6 gap-6 lg:gap-16 justify-center items-center mx-6 mb-8 bg-brand-dark rounded-2xl md:rounded-3xl container-margin text-brand-light pt-8 md:px-24"
-        // initial={{ opacity: 0, y: 20 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 1 }}
-        // viewport={{ once: true }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
       >
         <div className="flex flex-col gap-6 md:gap-8 max-w-[533px] p-0 md:py-10">
           <h2
@@ -62,10 +62,10 @@ export const Goals = () => {
 
       <motion.h3
         className="text-2xl md:text-3xl container-margin pt-8 font-extrabold px-6 xl:px-0"
-        // initial={{ opacity: 0, y: 20 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 1 }}
-        // viewport={{ once: true }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
       >
         Comece sua Jornada. Entregue tudo.
       </motion.h3>
@@ -145,17 +145,17 @@ export const Goals = () => {
 
       <motion.div
         className="text-3xl md:text-5xl font-extrabold text-brand-dark flex flex-col md:flex-row items-center container-margin justify-between pt-16 px-6 !overflow-visible"
-        // initial={{ opacity: 0, y: 30 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 1 }}
-        // viewport={{ once: true }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
       >
         <motion.h3
           className="self-start md:self-center leading-none"
-          // initial={{ opacity: 0, y: 30 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1, delay:  0.3 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay:  0.3 }}
+          viewport={{ once: true }}
         >
           Para o <br /> corpo todo
         </motion.h3>
@@ -164,17 +164,17 @@ export const Goals = () => {
           className="sm:w-[70%] md:w-[50%] md:-ml-[8%]"
           alt="Mulher se alongando"
           loading="blur"
-          // initial={{ opacity: 0, x: -30 }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // transition={{ duration: 1 }}
-          // viewport={{ once: false }}
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: false }}
         />
         <motion.h3
           className="self-end md:self-center leading-none text-right md:text-left"
-          // initial={{ opacity: 0, y: 30 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1, delay: 2 * 0.3 }}
-          // viewport={{ once: false }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 2 * 0.3 }}
+          viewport={{ once: false }}
         >
           e todos <br /> os corpos
         </motion.h3>

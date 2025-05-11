@@ -16,20 +16,20 @@ export const Testimonials = () => {
       <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-8">
         <motion.h2
           className="text-3xl md:text-5xl font-extrabold"
-          // initial={{ opacity: 0, y: 20 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           Resultados que vão muito além do espelho
         </motion.h2>
 
         <motion.p
           className="text-lg md:text-xl text-brand-gray-700"
-          // initial={{ opacity: 0, y: 30 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1.2, delay: 0.3 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           Não é sobre um antes/depois. É sobre estar pronta para viver o agora,
           como se não houvesse amanhã.
@@ -38,10 +38,10 @@ export const Testimonials = () => {
 
       <motion.div
         className="container-margin h-auto px-6 xl:px-0 relative mx-auto pr-0 overflow-visible"
-        // initial={{ opacity: 0, y: 50 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 1 }}
-        // viewport={{ once: true }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
       >
         <Swiper
           className="mb-12 sm:block !overflow-visible"
