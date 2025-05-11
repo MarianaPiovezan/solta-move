@@ -1,5 +1,4 @@
 import { sale } from "../../data/sale";
-import { useEffect } from "react";
 import { CardSale } from "../CardSale";
 import selo from "/assets/images/selo-garantia.webp";
 import imagem from "/assets/images/plataforma-solta.webp";
@@ -11,20 +10,7 @@ export const Sale = () => {
 
  
 
-useEffect(() => {
-  const id = sessionStorage.getItem("scrollToId");
-  if (id === "sale") {
-    const el = document.getElementById("sale");
 
-    if (el) {
-      // Espera animações terminarem — delay pequeno
-      setTimeout(() => {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-        sessionStorage.removeItem("scrollToId"); // limpar
-      }, 600); // ajuste conforme duração da animação (por ex., 500ms)
-    }
-  }
-}, []);
 
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   return (
@@ -37,6 +23,7 @@ useEffect(() => {
         <div className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
           <motion.h2
             className="text-3xl md:text-5xl font-extrabold "
+            layout
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.2 }}
@@ -46,6 +33,7 @@ useEffect(() => {
           </motion.h2>
           <motion.p
             className="text-lg md:text-xl text-brand-gray-800"
+            layout
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.5 }}
@@ -75,6 +63,7 @@ useEffect(() => {
             <div className="flex gap-8 items-center">
               <motion.h2
                 className="text-3xl md:text-5xl font-extrabold "
+                layout
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
@@ -89,6 +78,7 @@ useEffect(() => {
                 alt="Selo de Garantia"
                 className="w-[30%]"
                 loading="lazy"
+                layout
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{
@@ -100,6 +90,7 @@ useEffect(() => {
             </div>
             <motion.p
               className="text-lg md:text-xl text-brand-gray-800"
+              layout
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -121,6 +112,7 @@ useEffect(() => {
             className="drop-shadow-xl"
             src={imagem}
             alt="Todos os serviços que podem ser adiquiridos "
+            layout
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -131,6 +123,7 @@ useEffect(() => {
       <div className="container-margin pt-12 md:pt-16 flex items-center flex-col gap-6  px-6 xl:px-0">
         <motion.h2
           className="text-3xl md:text-5xl font-extrabold text-center "
+          layout
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -142,6 +135,7 @@ useEffect(() => {
           src={imagemDispositivoDesktop}
           alt="Plataforma solta em diversos dispositivos"
           className="w-[80%] lg:w-[90%] hidden md:block"
+          layout
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -151,6 +145,7 @@ useEffect(() => {
           src={imagemDispositivoMobile}
           alt="Plataforma solta em diversos dispositivos"
           className="w-full block md:hidden"
+          layout
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -160,6 +155,7 @@ useEffect(() => {
       <div className=" py-12 md:py-16 px-6 xl:px-0 max-w-2xl mx-auto flex flex-col items-center gap-2 hidden">
         <motion.div
           className="mx-auto bg-brand-gray-100  rounded-2xl md:rounded-3xl p-8 md:p-12  gap-8 flex flex-col"
+          layout
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.2 }}
@@ -180,6 +176,7 @@ useEffect(() => {
         </motion.div>
         <motion.p
           className="text-sm text-brand-gray-700 mx-auto"
+          layout
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.5 }}

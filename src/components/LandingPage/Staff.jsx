@@ -1,10 +1,10 @@
+import { motion } from "motion/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { trainers, contents } from "../../data/trainers";
 import estrela from "/assets/images/icons/star.svg";
 import video from "/assets/images/ola-treinos-divertidos.mp4";
 import imagem from "/assets/images/vida-saudavel-sauda-voce.webp";
-import { useInView } from "../../hooks/useInView";
 
 export const GroupStars = () => {
   return (
@@ -17,14 +17,6 @@ export const GroupStars = () => {
 };
 
 export const Staff = () => {
-  const [ref1, inView1] = useInView();
-  const [ref2, inView2] = useInView();
-  const [ref3, inView3] = useInView();
-  const [ref4, inView4] = useInView();
-  const [ref5, inView5] = useInView();
-  const [ref6, inView6] = useInView();
-  const [ref7, inView7] = useInView();
-
   return (
     <section
       id="trainers"
@@ -32,21 +24,25 @@ export const Staff = () => {
       className="relative overflow-hidden py-12 md:py-16"
     >
       <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
-        <h2
-          ref={ref1}
-          className={`fade-up ${
-            inView1 ? "in-view" : ""
-          } text-3xl md:text-5xl font-extrabold `}
+        <motion.h2
+          className="text-3xl md:text-5xl font-extrabold "
+          layout
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           Treinadoras que representam.
-        </h2>
+        </motion.h2>
       </div>
       <div className="container-margin px-6 xl:px-0 flex flex-col md:flex-row gap-8  items-stretch">
-        <div
-          ref={ref2}
-          className={`fade-up ${
-            inView2 ? "in-view" : ""
-          } flex flex-col gap-6 md:gap-8 md:w-1/2 items-stretch`}
+        <motion.div
+          className="flex flex-col gap-6 md:gap-8 md:w-1/2 items-stretch"
+          layout
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, }}
+          viewport={{ once: true }}
         >
           <div className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-gray-800 text-lg md:text-xl  self-stretch  h-full">
             <p>
@@ -72,12 +68,14 @@ export const Staff = () => {
               <p>Motivação</p> <GroupStars />{" "}
             </div>
           </div>
-        </div>
-        <div
-          ref={ref3}
-          className={`fade-up${
-            inView3 ? "in-view" : ""
-          } bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-dark  md:text-lg  font-bold md:w-1/2 grid grid-cols-2 gap-6 text-center `}
+        </motion.div>
+        <motion.div
+          className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-dark  md:text-lg  font-bold md:w-1/2 grid grid-cols-2 gap-6 text-center "
+          layout
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
           {trainers.map((item, index) => (
             <figure key={index} className="flex flex-col items-center gap-1">
@@ -94,24 +92,28 @@ export const Staff = () => {
               </figcaption>
             </figure>
           ))}
-        </div>
+        </motion.div>
       </div>
-      <h3
-        ref={ref4}
-        className={`fade-up ${
-          inView4 ? "in-view" : ""
-        } text-2xl md:text-3xl container-margin py-6 md:py-8 font-extrabold px-6  xl:px-0`}
+      <motion.h3
+        className="text-2xl md:text-3xl container-margin py-6 md:py-8 font-extrabold px-6  xl:px-0"
+        layout
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
       >
         A força que você precisa.
         <br />
         Sem forçar a barra.
-      </h3>
-      <div
-        ref={ref4}
+      </motion.h3>
+      <motion.div
         id="trainers-swiper"
-        className={`fade-up ${
-          inView4 ? "in-view" : ""
-        } container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   `}
+        className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   "
+        layout
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
       >
         <Swiper
           className="mb-12 sm:block !overflow-visible"
@@ -165,19 +167,33 @@ export const Staff = () => {
             tabIndex={0}
           />
         </div>
-      </div>
+      </motion.div>
       <div className="py-12 md:py-16">
         <div className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
-          <h2 className="text-3xl md:text-5xl font-extrabold ">
+          <motion.h2
+            className="text-3xl md:text-5xl font-extrabold "
+            layout
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             Adeus, Treinos punitivos. <br />
             Olá, treinos divertidos.
-          </h2>
-          <p className="text-lg md:text-xl text-brand-gray-700">
+          </motion.h2>
+          <motion.p
+            className="text-lg md:text-xl text-brand-gray-700"
+            layout
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             Fazer exercício na força do ódio, é coisa do passado. A Solta Move
             está aqui pra te convidar a descobrir uma nova maneira de se
             movimentar. De forma gentil, divertida e eficiente. Sem peso na
             consciência.
-          </p>
+          </motion.p>
         </div>
         <video
           src={video}
@@ -192,20 +208,24 @@ export const Staff = () => {
       </div>
       <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8   container-margin px-6 xl:px-0  ">
         <div>
-          <h2
-            ref={ref5}
-            className={`fade-up ${
-              inView5 ? "in-view" : ""
-            } text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 `}
+          <motion.h2
+            className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 "
+            layout
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
           >
             Sua vida saudável saúda você.
-          </h2>
+          </motion.h2>
 
-          <p
-            ref={ref6}
-            className={`fade-up ${
-              inView6 ? "in-view" : ""
-            } text-lg md:text-xl text-brand-gray-700  `}
+          <motion.p
+            className="text-lg md:text-xl text-brand-gray-700 "
+            layout
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
           >
             No passeio em família, na realização de um sonho ou quando toca sua
             música preferida na festa para você descer até o chão. A última
@@ -216,17 +236,23 @@ export const Staff = () => {
             <strong className="text-brand-dark">
               Bem-vinda a uma vida saudávilhosa.{" "}
             </strong>
-          </p>
+          </motion.p>
         </div>
 
-        <div ref={ref7} className={`fade-up ${inView7 ? "in-view" : ""} `}>
+        <motion.div
+             layout
+           initial={{ opacity: 0, y: 30 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.8 }}
+           viewport={{ once: true }}
+        >
           <img
             src={imagem}
             className="w-[80%] justify-self-center "
             loading="lazy"
             alt="Imagem de uma mulher se divertindo"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -26,6 +26,7 @@ export const Testimonials = () => {
 
         <motion.p
           className="text-lg md:text-xl text-brand-gray-700"
+          layout
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.3 }}
@@ -38,6 +39,7 @@ export const Testimonials = () => {
 
       <motion.div
         className="container-margin h-auto px-6 xl:px-0 relative mx-auto pr-0 overflow-visible"
+        layout
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}

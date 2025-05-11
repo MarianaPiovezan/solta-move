@@ -16,6 +16,7 @@ export const Hero = () => {
           <motion.h1
             id="hero-title"
             className="text-3xl md:text-5xl font-extrabold text-brand-dark"
+            layout
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -26,6 +27,7 @@ export const Hero = () => {
           </motion.h1>
 
           <motion.p
+               layout
             className="text-xl md:text-2xl text-shadow-brand-dark font-medium"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -36,6 +38,7 @@ export const Hero = () => {
           </motion.p>
 
           <motion.div
+               layout
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
@@ -48,6 +51,7 @@ export const Hero = () => {
         {/* Imagem do lado direito */}
         <motion.div
           className="w-full flex justify-center"
+          layout
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.6, duration: 1 }}

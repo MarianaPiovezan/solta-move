@@ -17,6 +17,7 @@ export const Goals = () => {
     >
       <motion.div
         className="flex flex-col lg:flex-row px-6 gap-6 lg:gap-16 justify-center items-center mx-6 mb-8 bg-brand-dark rounded-2xl md:rounded-3xl container-margin text-brand-light pt-8 md:px-24"
+        layout
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -62,6 +63,7 @@ export const Goals = () => {
 
       <motion.h3
         className="text-2xl md:text-3xl container-margin pt-8 font-extrabold px-6 xl:px-0"
+        layout
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -72,6 +74,7 @@ export const Goals = () => {
 
       <motion.div
         className="container-margin h-auto px-6 xl:px-0 pt-6 md:pt-8 relative mx-auto pr-0 overflow-visible"
+        layout
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
@@ -145,6 +148,7 @@ export const Goals = () => {
 
       <motion.div
         className="text-3xl md:text-5xl font-extrabold text-brand-dark flex flex-col md:flex-row items-center container-margin justify-between pt-16 px-6 !overflow-visible"
+        layout
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -152,6 +156,7 @@ export const Goals = () => {
       >
         <motion.h3
           className="self-start md:self-center leading-none"
+          layout
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay:  0.3 }}
@@ -164,6 +169,7 @@ export const Goals = () => {
           className="sm:w-[70%] md:w-[50%] md:-ml-[8%]"
           alt="Mulher se alongando"
           loading="blur"
+          layout
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
@@ -171,6 +177,7 @@ export const Goals = () => {
         />
         <motion.h3
           className="self-end md:self-center leading-none text-right md:text-left"
+          layout
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 2 * 0.3 }}
