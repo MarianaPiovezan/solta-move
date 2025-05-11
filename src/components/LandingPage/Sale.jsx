@@ -1,4 +1,5 @@
 import { sale } from "../../data/sale";
+import { useEffect } from "react";
 import { CardSale } from "../CardSale";
 import selo from "/assets/images/selo-garantia.webp";
 import imagem from "/assets/images/plataforma-solta.webp";
@@ -7,6 +8,24 @@ import imagemDispositivoMobile from "/assets/images/dispositivos-plataforma-solt
 import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
 export const Sale = () => {
+
+ 
+
+useEffect(() => {
+  const id = sessionStorage.getItem("scrollToId");
+  if (id === "sale") {
+    const el = document.getElementById("sale");
+
+    if (el) {
+      // Espera animações terminarem — delay pequeno
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        sessionStorage.removeItem("scrollToId"); // limpar
+      }, 600); // ajuste conforme duração da animação (por ex., 500ms)
+    }
+  }
+}, []);
+
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   return (
     <section
