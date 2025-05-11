@@ -66,10 +66,7 @@ export const Advantages = () => {
         className={`fade-up ${
           inView3 ? "in-view" : ""
         } max-w-[650px] text-center mx-auto text-lg md:text-xl text-brand-gray-700 px-6 md:px-0 `}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
+        
       >
         Não importa se seu objetivo é ter mais saúde para fazer as tarefas do
         dia a dia sem sofrimento, para se tornar uma velhinha independente ou se
