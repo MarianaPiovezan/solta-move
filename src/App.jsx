@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-     <ScrollToHash/>
+     {/* <ScrollToHash/> */}
    <Menu/>
    <BtnWatsapp/>
    <Hero/>
