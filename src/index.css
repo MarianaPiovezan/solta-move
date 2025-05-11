@@ -4,76 +4,58 @@
   --font-display: "Satoshi", "sans-serif";
   --breakpoint-3xl: 1920px;
   --color-brand-dark: #141414;
-  --color-brand-light: #FFFBFB;
-  --color-brand-blue-light: #A9B4F6;
-  --color-brand-blue-dark: #4444E9;
-  --color-brand-pink: #FF89DE;
-  --color-brand-yellow: #EFEA43;
-  --color-brand-red: #FF3948;
+  --color-brand-light: #fffbfb;
+  --color-brand-blue-light: #a9b4f6;
+  --color-brand-blue-dark: #4444e9;
+  --color-brand-pink: #ff89de;
+  --color-brand-yellow: #efea43;
+  --color-brand-red: #ff3948;
   --color-brand-gray-700: #71717a;
   --color-brand-gray-800: #52525b;
-  --color-brand-gray-100: #F4F2F6;
-  --color-whatsapp: #45EC6F;
+  --color-brand-gray-100: #f4f2f6;
+  --color-whatsapp: #45ec6f;
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
   /* ... */
 }
 
 @font-face {
-  font-family: 'Archivo';
-  src: url('/assets/fonts/Archivo.ttf');
+  font-family: "Archivo";
+  src: url("/assets/fonts/Archivo.ttf");
   font-display: swap;
   font-style: normal;
 }
 
-html{
+html {
   scroll-behavior: smooth;
-
 }
 
-#Anual{
+#Anual {
   scroll-margin-top: 300px;
 }
 
-
-body{
-  font-family: 'Archivo', sans-serif;
-  
-  
+body {
+  font-family: "Archivo", sans-serif;
 }
 
+/* efeito das sections */
 
-#sticky {
-  position: sticky;
-  position: -webkit-sticky;
-  background: #f83d23;
-  width: 100px;
-  height: 100px;
-  top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 6px #000;
-  color: #fff;
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-#wrapper {
-  width: 75%;
-  margin: auto;
-  background-color: #ccc;
-}
-#wrapper {
-  height: 800px;
+.fade-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (min-height: 768px) {
-  #wrapper{
+  #wrapper {
     height: 2000px;
   }
 }
-
-
-
 
 /* swiper  */
 
@@ -81,7 +63,7 @@ body{
   width: 100%;
 }
 
-.swiper [class^='swiper-button-'] {
+.swiper [class^="swiper-button-"] {
   inset: initial;
   margin: 0;
   align-self: center;
@@ -100,12 +82,11 @@ body{
   transform: scaleX(-1);
 }
 
-
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   position: static !important;
 }
 .swiper .swiper-button-next {
-
   justify-self: ;
   margin-right: 2px;
 }
@@ -119,7 +100,7 @@ body{
   height: 20%;
   max-width: 48px;
   margin: auto;
-  background-image: url('/assets/images/icons/arrow.svg');
+  background-image: url("/assets/images/icons/arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   transform: scaleX(-1) !important;
@@ -134,7 +115,7 @@ body{
   height: 20%;
   max-width: 48px;
   margin: auto;
-  background-image: url('/assets/images/icons/arrow.svg');
+  background-image: url("/assets/images/icons/arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 10;
@@ -173,7 +154,6 @@ body{
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: var(--swiper-pagination-bottom, 0px) !important;
 }
-
 
 @media screen and (min-width: 1200px) {
   .container-margin {
