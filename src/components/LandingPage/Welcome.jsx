@@ -8,9 +8,13 @@ export const Welcome = () => {
       aria-label="Mensagem de boas-vindas"
       className="flex flex-col h-auto items-center pt-14 md:pt-24 bg-brand-gray-100 overflow-hidden justify-center relative"
     >
-      <div className="relative w-full">
+      <motion.div className="relative w-full flex items-center justify-center "
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8  }}
+        viewport={{ once: true }}>
         <HighlightEffect />
-      </div>
+      </motion.div>
       
       <div className="bg-brand-yellow py-16 w-full flex flex-col items-center gap-6 md:gap-8 text-center px-6 ">
         <motion.h2

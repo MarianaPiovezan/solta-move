@@ -78,7 +78,7 @@ export const Staff = () => {
           {trainers.map((item, index) => (
             <figure key={index} className="flex flex-col items-center gap-1">
               {" "}
-              <div className=" rounded-2xl aspect-9/7">
+              <div className=" rounded-2xl aspect-9/7 overflow-hidden">
                 <img
                   src={item.image}
                   alt={`Foto da treinadora ${item.name}`}
@@ -241,7 +241,7 @@ export const Staff = () => {
           <img
             src={imagem}
             className="w-[80%] justify-self-center "
-            loading="eager"
+            loading="lazy"
             alt="Imagem de uma mulher se divertindo"
             width={'250px'}
 

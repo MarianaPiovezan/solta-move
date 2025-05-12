@@ -9,7 +9,7 @@ export const Activities = () => {
     <section
       id="activities"
       aria-label="Fique por dentro da plataforma"
-      className=" py-12 md:py-16  "
+      className=" py-12 md:py-16 overflow-hidden  "
     >
       <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
         <motion.h2

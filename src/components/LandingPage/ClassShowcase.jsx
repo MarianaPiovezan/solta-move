@@ -9,11 +9,11 @@ export const ClassShowcase = () => {
     <section
       id="class-show-case"
       aria-label="Sugestões de aulas para você experimentar"
-      className="pt-12 md:pt-16 "
+      className="pt-12 md:pt-16 overflow-hidden "
     >
       <div className="pb-12 md:pb-16">
         <motion.div
-          className="flex  flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0"
+          className="flex  flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0 "
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}

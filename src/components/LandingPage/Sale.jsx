@@ -10,7 +10,7 @@ export const Sale = () => {
     <section
       id="sale"
       aria-label="Confira todos os nossos planos"
-      className=" scroll-mt-20"
+      className=" scroll-mt-14"
     >
       <div className="  bg-brand-gray-100 py-12 md:py-16 ">
         <motion.div
