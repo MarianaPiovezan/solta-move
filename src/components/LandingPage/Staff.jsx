@@ -21,7 +21,7 @@ export const Staff = () => {
     <section
       id="trainers"
       aria-label="Fique por dentro da plataforma"
-      className="relative overflow-hidden py-12 md:py-16 h-[2900px] min-[500px]:h-[3050px]  min-[1280px]:h-[3100px] min-[1400px]:h-[3250px] min-[1600px]:h-[3450px]"
+      className="relative overflow-hidden py-12 md:py-16 h-[2900px] min-[500px]:h-[3000px]  min-[1280px]:h-[3100px] min-[1400px]:h-[3180px] min-[1600px]:h-[3450px]"
     >
       <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
         <motion.h2
