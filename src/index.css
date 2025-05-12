@@ -26,9 +26,11 @@
   font-style: normal;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
+
+
 
 #Anual {
   scroll-margin-top: 300px;

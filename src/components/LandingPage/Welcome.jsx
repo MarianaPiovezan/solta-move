@@ -6,17 +6,20 @@ export const Welcome = () => {
   return (
     <section
       aria-label="Mensagem de boas-vindas"
-      className="flex flex-col h-auto items-center pt-14 md:pt-24 bg-brand-gray-100 overflow-hidden justify-center relative"
+      className="flex flex-col h-auto items-center pt-14 md:pt-24 bg-brand-gray-100 overflow-hidden justify-center "
     >
-      <HighlightEffect />
+      <div className="relative w-full">
+        {/* <HighlightEffect /> */}
+      </div>
+      
       <div className="bg-brand-yellow py-16 w-full flex flex-col items-center gap-6 md:gap-8 text-center px-6 ">
         <motion.h2
           className="text-3xl font-extrabold "
           layout
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          // initial={{ opacity: 0, y: 20 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8  }}
+          // viewport={{ once: true }}
         >
           Bem-vinda ao fitness fora do padrão
         </motion.h2>
@@ -24,10 +27,10 @@ export const Welcome = () => {
         <motion.p
           className="text-lg md:text-xl container-margin"
           layout
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          viewport={{ once: true }}
+          // initial={{ opacity: 0, y: 20 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8 , delay: 0.3 }}
+          // viewport={{ once: true }}
         >
           Nós acreditamos que o verdadeiro poder dos exercícios está além do
           espelho. Por isso, estamos revolucionando o fitness. Não estamos aqui

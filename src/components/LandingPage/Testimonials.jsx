@@ -13,37 +13,35 @@ export const Testimonials = () => {
       aria-label="Depoimentos de alunas"
       className="overflow-hidden pt-12 md:pt-16 "
     >
-      <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-8">
-        <motion.h2
+      <motion.div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-8" 
+        // initial={{ opacity: 0, y: 20 }}
+        // whileInView={{ opacity: 1, y: 0 }}
+        // transition={{ duration: 0.8  }}
+        // viewport={{ once: true }}
+        >
+        <h2
           className="text-3xl md:text-5xl font-extrabold"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+        
         >
           Resultados que vão muito além do espelho
-        </motion.h2>
+        </h2>
 
-        <motion.p
+        <p
           className="text-lg md:text-xl text-brand-gray-700"
-          layout
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          viewport={{ once: true }}
+        
         >
           Não é sobre um antes/depois. É sobre estar pronta para viver o agora,
           como se não houvesse amanhã.
-        </motion.p>
-      </div>
+        </p>
+      </motion.div>
 
       <motion.div
         className="container-margin h-auto px-6 xl:px-0 relative mx-auto pr-0 overflow-visible"
         layout
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
+        // initial={{ opacity: 0, y: 50 }}
+        // whileInView={{ opacity: 1, y: 0 }}
+        // transition={{ duration: 0.8  }}
+        // viewport={{ once: true }}
       >
         <Swiper
           className="mb-12 sm:block !overflow-visible"
@@ -74,12 +72,12 @@ export const Testimonials = () => {
             >
               <figure>
                 <div className="rounded-2xl md:rounded-3xl overflow-hidden mb-6 border border-brand-gray-100 aspect-3/4">
-                  <LazyLoadImage
+                  <img
                     src={item.image}
                     alt={`Foto de ${item.name}`}
-                    effect="blur"
+                    loading="lazy"
                     className="w-full h-full object-cover"
-                    placeholderSrc={item.imagePlaceholder}
+                   
                   />
                 </div>
                 <blockquote className="text-brand-gray-700 text-base md:text-lg">

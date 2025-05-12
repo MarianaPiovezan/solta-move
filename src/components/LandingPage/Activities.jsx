@@ -14,10 +14,10 @@ export const Activities = () => {
       <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
         <motion.h2
           className="text-3xl md:text-5xl font-extrabold "
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          // initial={{ opacity: 0, y: 20 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 1 }}
+          // viewport={{ once: true }}
         >
           Encontre o treino que mexe com você.
         </motion.h2>
@@ -25,16 +25,16 @@ export const Activities = () => {
       <div className="container-margin px-6 xl:px-0 flex flex-col md:flex-row gap-8 h-full items-stretch">
         <motion.div
           className="bg-brand-gray-100 p-6 md:p-12 rounded-2xl   md:rounded-3xl text-brand-gray-800 text-lg md:text-xl  md:w-1/2 "
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.1 }}
-          viewport={{ once: true }}
+          // initial={{ opacity: 0, y: 20 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 1, delay: 0.1 }}
+          // viewport={{ once: true }}
         >
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0, y: 30 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 1 }}
+            // viewport={{ once: true }}
           >
             {" "}
             <strong className="text-brand-dark">
@@ -52,10 +52,12 @@ export const Activities = () => {
             </strong>
           </motion.p>
         </motion.div>
-        <motion.div className="bg-brand-gray-100 py-6 md:py-12 rounded-2xl  md:rounded-3xl text-brand-gray-700 text-lg md:text-xl md:w-1/2  " initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          viewport={{ once: true }}>
+        <motion.div className="bg-brand-gray-100 py-6 md:py-12 rounded-2xl  md:rounded-3xl text-brand-gray-700 text-lg md:text-xl md:w-1/2  "
+        //  initial={{ opacity: 0, y: 20 }}
+        //   whileInView={{ opacity: 1, y: 0 }}
+        //   transition={{ duration: 0.8 }}
+        //   viewport={{ once: true }}
+          >
           <Swiper
             className="sm:block mb-6 md:mb-8"
             modules={[Navigation, Pagination, Autoplay]}
@@ -163,20 +165,22 @@ export const Activities = () => {
         </motion.div>
       </div>
 
-      <motion.h3 className="text-2xl md:text-3xl container-margin py-6 md:py-8 font-extrabold px-6  xl:px-0"    initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}>
+      <motion.h3 className="text-2xl md:text-3xl container-margin py-6 md:py-8 font-extrabold px-6  xl:px-0"    
+      // initial={{ opacity: 0, y: 20 }}
+      //     whileInView={{ opacity: 1, y: 0 }}
+      //     transition={{ duration: 0.8 }}
+      //     viewport={{ once: true }}
+          >
         Você é única. <br />
         Sua maneira de se mover também.
       </motion.h3>
       <motion.div
         id="activities-app"
         className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        viewport={{ once: true }}
+        // initial={{ opacity: 0, y: 20 }}
+        // whileInView={{ opacity: 1, y: 0 }}
+        // transition={{ duration: 0.8 }}
+        // viewport={{ once: true }}
       >
         <Swiper
           className="mb-12 sm:block !overflow-visible"

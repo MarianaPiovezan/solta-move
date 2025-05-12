@@ -1,12 +1,8 @@
 import { advantages } from "../../data/advantages";
 import image from "/assets/images/e-sobre-o-que-sente.webp";
-import { useInView } from "../../hooks/useInView";
+import { motion } from "framer-motion";
 
 export const Advantages = () => {
-  const [ref1, inView1] = useInView();
-  const [ref2, inView2] = useInView();
-  const [ref3, inView3] = useInView();
-
   return (
     <section
       id="advantages"
@@ -15,14 +11,15 @@ export const Advantages = () => {
     >
       <div className="pb-12 md:pb-16">
         <div className="flex flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0">
-          <h2
-            ref={ref1}
-            className={`fade-up ${
-              inView1 ? "in-view" : ""
-            } text-3xl md:text-5xl lg:max-w-[740px] font-extrabold mx-auto text-center`}
+          <motion.h2
+            className="text-3xl md:text-5xl lg:max-w-[740px] font-extrabold mx-auto text-center"
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 0.8 }}
+            // viewport={{ once: true }}
           >
             Treinar não é sobre o que você vê, é sobre o que você sente.
-          </h2>
+          </motion.h2>
         </div>
 
         <div className="relative h-[1100px] md:h-[1000px] lg:h-[900px]  ">
@@ -32,17 +29,17 @@ export const Advantages = () => {
               className="w-[90%] md:w-[60%] object-contain"
               src={image}
               alt="Mulher praticando exercícios"
-              loading="lazy"
+              // loading="lazy"
             />
           </div>
 
           {/* Cards que rolam sobre a imagem */}
-          <div
-            ref={ref2}
-            className={`fade-up ${
-              inView2 ? "in-view" : ""
-            } absolute top-0 z-10 w-full container-margin grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 px-6 xl:px-0 gap-6 !max-w-[1038px] mx-auto items-stretch pt-56 left-[50%] -translate-x-[50%]`}
-            
+          <motion.div
+            className="absolute top-0 z-10 w-full container-margin grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 px-6 xl:px-0 gap-6 !max-w-[1038px] mx-auto items-stretch pt-56 left-[50%] -translate-x-[50%]"
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 0.8 }}
+            // viewport={{ once: true }}
           >
             {advantages.map((item, index) => (
               <div
@@ -57,16 +54,16 @@ export const Advantages = () => {
                 </p>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
 
-      <blockquote
-       ref={ref3}
-        className={`fade-up ${
-          inView3 ? "in-view" : ""
-        } max-w-[650px] text-center mx-auto text-lg md:text-xl text-brand-gray-700 px-6 md:px-0 `}
-        
+      <motion.blockquote
+        className="max-w-[650px] text-center mx-auto text-lg md:text-xl text-brand-gray-700 px-6 md:px-0 "
+        // initial={{ opacity: 0, y: 20 }}
+        // whileInView={{ opacity: 1, y: 0 }}
+        // transition={{ duration: 0.8 }}
+        // viewport={{ once: true }}
       >
         Não importa se seu objetivo é ter mais saúde para fazer as tarefas do
         dia a dia sem sofrimento, para se tornar uma velhinha independente ou se
@@ -74,7 +71,7 @@ export const Advantages = () => {
         <strong className="text-brand-dark">
           a Solta Move será sua aliada durante toda a jornada.
         </strong>
-      </blockquote>
+      </motion.blockquote>
     </section>
   );
 };

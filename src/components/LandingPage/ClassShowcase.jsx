@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { treinamentos, maratonas } from "../../data/classes";
 import imagem from "/assets/images/siga-o-fluxo.webp";
 import { motion } from "motion/react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const ClassShowcase = () => {
   return (
@@ -13,33 +12,27 @@ export const ClassShowcase = () => {
       className="overflow-hidden pt-12 md:pt-16 "
     >
       <div className="pb-12 md:pb-16">
-        <div className="flex  flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0">
-          <motion.h2
-            className="text-3xl md:text-5xl lg:max-w-1/2 font-extrabold "
-            // initial={{ opacity: 0, y: 20 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 1 }}
-            // viewport={{ once: true }}
-          >
+        <motion.div
+          className="flex  flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0"
+          // initial={{ opacity: 0, y: 20 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8 }}
+          // viewport={{ once: true }}
+        >
+          <h2 className="text-3xl md:text-5xl lg:max-w-1/2 font-extrabold ">
             Tem sempre uma novidade para você experimentar.
-          </motion.h2>
-          <motion.p
-            className="text-lg md:text-xl text-brand-gray-700 lg:max-w-1/2"
-            // initial={{ opacity: 0, y: 20 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 1 }}
-            // viewport={{ once: true }}
-          >
+          </h2>
+          <p className="text-lg md:text-xl text-brand-gray-700 lg:max-w-1/2">
             Toda semana novas aulas são adicionadas na plataforma. Com novos
             movimentos, novos desafios, novas descobertas.
-          </motion.p>
-        </div>
+          </p>
+        </motion.div>
         <motion.div
           id="treinamentos"
           className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   "
           // initial={{ opacity: 0, y: 30 }}
           // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1 }}
+          // transition={{ duration: 0.8 }}
           // viewport={{ once: true }}
         >
           <Swiper
@@ -78,7 +71,7 @@ export const ClassShowcase = () => {
                     <img
                       src={item.image}
                       alt={`Foto de ${item.name}`}
-                      loading="lazy"
+                      // loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -111,25 +104,20 @@ export const ClassShowcase = () => {
         </motion.div>
       </div>
       <div className="py-12 md:py-16">
-        <div className="flex  flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0">
-          <motion.div
-            // initial={{ opacity: 0, y: 20 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 1 }}
-            // viewport={{ once: true }}
-          >
+        <motion.div
+          className="flex  flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0"
+          // initial={{ opacity: 0, y: 20 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8 }}
+          // viewport={{ once: true }}
+        >
+          <div>
             <h3 className="text-xl md:text-2xl font-bold">Maratonas</h3>
             <h2 className="text-3xl md:text-5xl lg:max-w-1/2 font-extrabold ">
               Fique pronta para qualquer desafio.
             </h2>
-          </motion.div>
-          <motion.p
-            className="text-lg md:text-xl text-brand-gray-700 lg:max-w-1/2"
-            // initial={{ opacity: 0, y: 20 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 1 }}
-            // viewport={{ once: true }}
-          >
+          </div>
+          <p className="text-lg md:text-xl text-brand-gray-700 lg:max-w-1/2">
             As Maratonas são combinações de treinos de até 4 semanas,
             estruturados{" "}
             <strong className="text-brand-dark">
@@ -140,14 +128,14 @@ export const ClassShowcase = () => {
             Está no período menstrual e quer aliviar as dores da cólica?
             Entendido. Precisando de confiança para aquele projeto difícil da
             próxima semana? Aqui também. Mais mobilidade? Ao seu dispor.
-          </motion.p>
-        </div>
+          </p>
+        </motion.div>
         <motion.div
           id="maratonas"
           className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   "
           // initial={{ opacity: 0, y: 20 }}
           // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1 }}
+          // transition={{ duration: 0.8 }}
           // viewport={{ once: true }}
         >
           <Swiper
@@ -185,7 +173,7 @@ export const ClassShowcase = () => {
                   <img
                     src={item.image}
                     alt={`Foto de ${item.name}`}
-                    loading="lazy"
+                    // loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -210,25 +198,18 @@ export const ClassShowcase = () => {
       </div>
 
       <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0 py-12 !hidden ">
-        <div>
-          <motion.h2
-            className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 "
-            // initial={{ opacity: 0, y: 20 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 1 }}
-            // viewport={{ once: true }}
-          >
+        <motion.div
+          // initial={{ opacity: 0, y: 20 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 1 }}
+          // viewport={{ once: true }}
+        >
+          <h2 className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 ">
             Siga o fluxo. <br />
             Mantenha o ciclo de treino.
-          </motion.h2>
+          </h2>
 
-          <motion.p
-            className="text-lg md:text-xl text-brand-gray-700 "
-            // initial={{ opacity: 0, y: 30 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 1 }}
-            // viewport={{ once: true }}
-          >
+          <p className="text-lg md:text-xl text-brand-gray-700 ">
             <strong className="text-brand-dark">
               Potencialize seus resultados sincronizando seus treinos com seu
               ciclo menstrual.{" "}
@@ -237,8 +218,8 @@ export const ClassShowcase = () => {
             Na Solta Move você aprende como usar seu ciclo menstrual a seu favor
             e levar seu desempenho nos treinos a um outro nível. Você vai
             descobrir que seu ciclo menstrual é o seu aliado, não o seu inimigo.
-          </motion.p>
-        </div>
+          </p>
+        </motion.div>
 
         <motion.img
           src={imagem}
@@ -247,7 +228,7 @@ export const ClassShowcase = () => {
           // whileInView={{ opacity: 1, x: 0 }}
           // transition={{ duration: 1 }}
           // viewport={{ once: true }}
-          loading="lazy"
+          // loading="lazy"
         />
       </div>
     </section>

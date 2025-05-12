@@ -1,9 +1,5 @@
 import { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const frases = [
   "Treinos do iniciante ao avançado.",
@@ -33,26 +29,29 @@ export const HighlightEffect = () => {
     offset: ["start end", "end start"]
   });
 
-  const opacities = useFraseOpacities(scrollYProgress); 
+  const opacities = useFraseOpacities(scrollYProgress);
 
   return (
-    <div
+    <motion.div
       ref={containerRef}
       className="pb-20 md:pb-24 bg-brand-gray-100 flex flex-col items-center gap-2 max-w-[1200px] px-6 relative"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
     >
-      <p className="text-2xl md:text-3xl  text-center leading-snug    ">
+      <p className="text-2xl md:text-3xl text-center leading-snug">
         {frases.map((frase, index) => (
           <motion.span
             key={index}
             style={{ opacity: opacities[index] }}
-            className={`transition-all duration-300 font-bold text-brand-dark   ${
-              index === frases.length - 1 ? "w-full text-center block " : "mr-2"
+            className={`font-bold text-brand-dark ${
+              index === frases.length - 1 ? "w-full text-center block" : "mr-2"
             }`}
           >
             {frase}
           </motion.span>
         ))}
       </p>
-    </div>
+    </motion.div>
   );
 };

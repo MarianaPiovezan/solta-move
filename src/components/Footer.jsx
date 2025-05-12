@@ -17,10 +17,14 @@ export const Footer = () => {
             <img src={logo} alt="Solta Move" className="w-16" loading="lazy" />
             <div className="flex gap-4 mt-2 ">
               <a href="https://www.instagram.com/soltamove/" aria-label="Instagram" target="_blank" className="hover:-translate-y-2 duration-300 ease-in-out">
-                <img src={iconInstragram} alt="Instagram" className="w-8" loading="lazy" />
+                <img src={iconInstragram} alt="Instagram" className="w-8" 
+                // loading="lazy"
+                 />
               </a>
               <a href="https://www.youtube.com/@soltamove" aria-label="YouTube" className="hover:-translate-y-2 duration-300 ease-in-out" target="_blank" >
-                <img src={iconYoutube} alt="YouTube" className="w-8" loading="lazy" />
+                <img src={iconYoutube} alt="YouTube" className="w-8" 
+                // loading="lazy"
+                 />
               </a>
             </div>
             <small className="text-sm">©2025 Solta Move<br />Todos os direitos reservados.</small>
