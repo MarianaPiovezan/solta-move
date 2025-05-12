@@ -19,15 +19,15 @@ export const Faq = () => {
     <section
       id="faq"
       aria-label="Fique por dentro da plataforma"
-      className="overflow-hidden py-12 md:py-16"
+      className=" py-12 md:py-16"
     >
       <div className="container-margin flex px-6 flex-col gap-8 justify-center">
         <motion.h2
           className="text-3xl md:text-5xl font-extrabold"
-          // initial={{ opacity: 0, y: 30 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8 , delay: 0.1 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 , delay: 0.1 }}
+          viewport={{ once: true }}
         >
           Ainda com dúvida? <br />A resposta pode estar aqui.
         </motion.h2>
@@ -49,10 +49,10 @@ export const Faq = () => {
         </div>
 
         <motion.div className="flex flex-col md:flex-row md:gap-8 gap-6" 
-        // initial={{ opacity: 0, y: 20 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 0.8  }}
-        // viewport={{ once: true }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8  }}
+        viewport={{ once: true }}
         >
           <Button className="w-full" title={"Escolher plano"} link="#Anual" />
           <Button

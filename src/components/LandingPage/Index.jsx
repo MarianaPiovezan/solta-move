@@ -17,9 +17,9 @@ export const Hero = () => {
             id="hero-title"
             className="text-3xl md:text-5xl font-extrabold text-brand-dark"
             layout
-            // initial={{ opacity: 0, y: 30 }}
-            // animate={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
           >
             Fitness que te move,
             <br />
@@ -29,9 +29,9 @@ export const Hero = () => {
           <motion.p
                layout
             className="text-xl md:text-2xl text-shadow-brand-dark font-medium"
-            // initial={{ opacity: 0, y: 30 }}
-            // animate={{ opacity: 1, y: 0 }}
-            // transition={{ delay: 0.3, duration: 0.8 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
           >
             Ganhe mais força, energia e confiança. Fique pronta para viver
             momentos mais incríveis, intensos e desafiadores da sua vida.
@@ -39,9 +39,9 @@ export const Hero = () => {
 
           <motion.div
                layout
-            // initial={{ opacity: 0, y: 30 }}
-            // animate={{ opacity: 1, y: 0 }}
-            // transition={{ delay: 0.1, duration: 0.8 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.8 }}
           >
             <Button title={"Experimente por 15 dias"} link="#sale" />
           </motion.div>
@@ -52,9 +52,9 @@ export const Hero = () => {
         <motion.div
           className="w-full flex justify-center"
           layout
-          // initial={{ opacity: 0, x: 80 }}
-          // animate={{ opacity: 1, x: 0 }}
-          // transition={{ delay: 0.2, duration: 0.8  }}
+          initial={{ opacity: 0, x: 80 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2, duration: 0.8  }}
         >
           <img
             src="/assets/images/principal.webp"

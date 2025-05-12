@@ -20,6 +20,7 @@ function App() {
      {/* <ScrollToHash/> */}
    <Menu/>
    <BtnWatsapp/>
+   <main className="overflow-hidden">
    <Hero/>
    <Welcome/>
    <Testimonials/>
@@ -30,6 +31,7 @@ function App() {
    <Staff/>
    <Sale/>
    <Faq/>
+   </main>
    <Footer/>
 
    </>

@@ -9,15 +9,15 @@ export const ClassShowcase = () => {
     <section
       id="class-show-case"
       aria-label="Sugestões de aulas para você experimentar"
-      className="overflow-hidden pt-12 md:pt-16 "
+      className="pt-12 md:pt-16 "
     >
       <div className="pb-12 md:pb-16">
         <motion.div
           className="flex  flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0"
-          // initial={{ opacity: 0, y: 20 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-5xl lg:max-w-1/2 font-extrabold ">
             Tem sempre uma novidade para você experimentar.
@@ -30,10 +30,10 @@ export const ClassShowcase = () => {
         <motion.div
           id="treinamentos"
           className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   "
-          // initial={{ opacity: 0, y: 30 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
           <Swiper
             className="mb-12 sm:block !overflow-visible"
@@ -71,7 +71,7 @@ export const ClassShowcase = () => {
                     <img
                       src={item.image}
                       alt={`Foto de ${item.name}`}
-                      // loading="lazy"
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -106,10 +106,10 @@ export const ClassShowcase = () => {
       <div className="py-12 md:py-16">
         <motion.div
           className="flex  flex-col gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0"
-          // initial={{ opacity: 0, y: 20 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
           <div>
             <h3 className="text-xl md:text-2xl font-bold">Maratonas</h3>
@@ -133,10 +133,10 @@ export const ClassShowcase = () => {
         <motion.div
           id="maratonas"
           className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   "
-          // initial={{ opacity: 0, y: 20 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
           <Swiper
             className="mb-12 sm:block !overflow-visible"
@@ -173,7 +173,7 @@ export const ClassShowcase = () => {
                   <img
                     src={item.image}
                     alt={`Foto de ${item.name}`}
-                    // loading="lazy"
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -199,10 +199,10 @@ export const ClassShowcase = () => {
 
       <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8 pb-6 md:pb-8 container-margin px-6 xl:px-0 py-12 !hidden ">
         <motion.div
-          // initial={{ opacity: 0, y: 20 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 ">
             Siga o fluxo. <br />
@@ -224,11 +224,11 @@ export const ClassShowcase = () => {
         <motion.img
           src={imagem}
           alt="Imagem de uma mulher fazendo exercício sincronizado com seu ciclo mentrual"
-          // initial={{ opacity: 0, x: 50 }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // transition={{ duration: 1 }}
-          // viewport={{ once: true }}
-          // loading="lazy"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          loading="lazy"
         />
       </div>
     </section>

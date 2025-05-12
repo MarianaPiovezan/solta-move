@@ -16,10 +16,10 @@ export const Sale = () => {
         <motion.div
           className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8"
           layout
-          //  initial={{ opacity: 0, y: 30 }}
-          //  whileInView={{ opacity: 1, y: 0 }}
-          //  transition={{ duration: 0.8   }}
-          //  viewport={{ once: true }}
+           initial={{ opacity: 0, y: 30 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.8   }}
+           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-5xl font-extrabold ">
             Comece a se mover e vá ainda mais longe.
@@ -38,10 +38,10 @@ export const Sale = () => {
         <motion.div
           id="cards"
           layout
-          // initial={{ opacity: 0, y: 30 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8   }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8   }}
+          viewport={{ once: true }}
           className=" max-w-[1080px] h-auto px-6 xl:px-0  flex flex-col md:grid grid-cols-3 lg:gap-12      mx-auto gap-6     "
         >
           {sale.map((item, index) => (
@@ -52,10 +52,10 @@ export const Sale = () => {
           <motion.div
             className="flex  flex-col gap-6 md:gap-8 justify-center   max-w-2xl mx-auto mb-6 md:mb-8 "
             layout
-            // initial={{ opacity: 0, y: 30 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 0.8  }}
-            // viewport={{ once: true }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8  }}
+            viewport={{ once: true }}
           >
             <div className="flex gap-8 items-center">
               <h2 className="text-3xl md:text-5xl font-extrabold ">
@@ -67,16 +67,16 @@ export const Sale = () => {
                 src={selo}
                 alt="Selo de Garantia"
                 className="w-[30%]"
-                // loading="lazy"
+                loading="lazy"
               />
             </div>
             <motion.p
               className="text-lg md:text-xl text-brand-gray-800"
               layout
-              // initial={{ opacity: 0, y: 50 }}
-              // whileInView={{ opacity: 1, y: 0 }}
-              // transition={{ duration: 0.8  }}
-              // viewport={{ once: true }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8  }}
+              viewport={{ once: true }}
             >
               <strong className="font-bold text-brand-dark mr-1">
                 {" "}
@@ -95,10 +95,10 @@ export const Sale = () => {
             src={imagem}
             alt="Todos os serviços que podem ser adiquiridos "
             layout
-            // initial={{ opacity: 0, y: 30 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 0.8  }}
-            // viewport={{ once: true }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8  }}
+            viewport={{ once: true }}
             width={'650px'}
           />
         </div>
@@ -107,10 +107,10 @@ export const Sale = () => {
         <motion.h2
           className="text-3xl md:text-5xl font-extrabold text-center "
           layout
-          // initial={{ opacity: 0, y: 30 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8  }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8  }}
+          viewport={{ once: true }}
         >
           Treine no seu dispositivo favorito.
         </motion.h2>
@@ -141,10 +141,10 @@ export const Sale = () => {
         <motion.div
           className="mx-auto bg-brand-gray-100  rounded-2xl md:rounded-3xl p-8 md:p-12  gap-8 flex flex-col"
           layout
-          // initial={{ opacity: 0, y: 30 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8   }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8   }}
+          viewport={{ once: true }}
         >
           <h3 className="text-3xl md:text-5xl font-extrabold text-center ">
             Uma Move a Outra.
@@ -162,10 +162,10 @@ export const Sale = () => {
         <motion.p
           className="text-sm text-brand-gray-700 mx-auto"
           layout
-          // initial={{ opacity: 0, y: 50 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8  }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8  }}
+          viewport={{ once: true }}
         >
           *Fonte: Datafolha Instituto de Pesquisas
         </motion.p>

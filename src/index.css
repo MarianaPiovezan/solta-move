@@ -26,10 +26,10 @@
   font-style: normal;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
 
+html{
+  scroll-behavior: smooth;
+}
 
 
 #Anual {
@@ -38,6 +38,7 @@
 
 body {
   font-family: "Archivo", sans-serif;
+  /* overflow: hidden; */
 }
 
 /* efeito das sections */

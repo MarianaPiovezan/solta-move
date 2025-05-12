@@ -21,26 +21,26 @@ export const Staff = () => {
     <section
       id="trainers"
       aria-label="Fique por dentro da plataforma"
-      className="relative overflow-hidden py-12 md:py-16"
+      className="relative overflow-hidden py-12 md:py-16 h-[2900px] min-[500px]:h-[3050px] min-[1280px]:h-[3100px] min-[1400px]:h-[3250px] min-[1600px]:h-[3450px]"
     >
       <div className="flex px-6 flex-col gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8">
         <motion.h2
           className="text-3xl md:text-5xl font-extrabold "
           layout
-          // initial={{ opacity: 0, y: 20 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8  }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8  }}
+          viewport={{ once: true }}
         >
           Treinadoras que representam.
         </motion.h2>
       </div>
       <motion.div className="container-margin px-6 xl:px-0 flex flex-col md:flex-row gap-8  items-stretch"
        layout
-      //  initial={{ opacity: 0, y: 20 }}
-      //  whileInView={{ opacity: 1, y: 0 }}
-      //  transition={{ duration: 0.8, }}
-      //  viewport={{ once: true }}
+       initial={{ opacity: 0, y: 20 }}
+       whileInView={{ opacity: 1, y: 0 }}
+       transition={{ duration: 0.8, }}
+       viewport={{ once: true }}
        >
         <div
           className="flex flex-col gap-6 md:gap-8 md:w-1/2 items-stretch"
@@ -78,7 +78,7 @@ export const Staff = () => {
           {trainers.map((item, index) => (
             <figure key={index} className="flex flex-col items-center gap-1">
               {" "}
-              <div className="overflow-hidden rounded-2xl aspect-9/7">
+              <div className=" rounded-2xl aspect-9/7">
                 <img
                   src={item.image}
                   alt={`Foto da treinadora ${item.name}`}
@@ -95,10 +95,10 @@ export const Staff = () => {
       <motion.h3
         className="text-2xl md:text-3xl container-margin py-6 md:py-8 font-extrabold px-6  xl:px-0"
         layout
-        // initial={{ opacity: 0, y: 30 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 0.8  }}
-        // viewport={{ once: true }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8  }}
+        viewport={{ once: true }}
       >
         A força que você precisa.
         <br />
@@ -108,10 +108,10 @@ export const Staff = () => {
         id="trainers-swiper"
         className="container-margin h-auto px-6 xl:px-0    relative  mx-auto  pr-0 overflow-visible   "
         layout
-        // initial={{ opacity: 0, y: 30 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 0.8 }}
-        // viewport={{ once: true }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
       >
         <Swiper
           className="mb-12 sm:block !overflow-visible"
@@ -169,10 +169,10 @@ export const Staff = () => {
       <div className="py-12 md:py-16">
         <motion.div className="flex px-6 flex-col gap-6 md:gap-8 justify-center items-center text-center max-w-2xl mx-auto mb-6 md:mb-8" 
         layout
-        // initial={{ opacity: 0, y: 30 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 0.8 }}
-        // viewport={{ once: true }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         >
           <h2
             className="text-3xl md:text-5xl font-extrabold "
@@ -205,10 +205,10 @@ export const Staff = () => {
       <div className="flex md:grid grid-cols-2 items-center  flex-col md:flex-row gap-6 md:gap-8   container-margin px-6 xl:px-0  ">
         <motion.div 
         layout
-        // initial={{ opacity: 0, y: 30 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 0.8 }}
-        // viewport={{ once: true }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         >
           <h2
             className="text-3xl md:text-5xl  font-extrabold mb-6 md:mb-8 "
@@ -233,10 +233,10 @@ export const Staff = () => {
 
         <motion.div
              layout
-          //  initial={{ opacity: 0, y: 30 }}
-          //  whileInView={{ opacity: 1, y: 0 }}
-          //  transition={{ duration: 0.8 }}
-          //  viewport={{ once: true }}
+           initial={{ opacity: 0, y: 30 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.8 }}
+           viewport={{ once: true }}
         >
           <img
             src={imagem}
