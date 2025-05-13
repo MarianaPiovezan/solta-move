@@ -11,13 +11,11 @@ import { Staff } from "./components/LandingPage/Staff"
 import { Sale } from "./components/LandingPage/Sale"
 import {Faq} from "./components/LandingPage/Faq"
 import { Welcome } from "./components/LandingPage/Welcome"
-import { ScrollToHash } from "./components/ScrollTpHash"
 
 function App() {
 
   return (
     <>
-     {/* <ScrollToHash/> */}
    <Menu/>
    <BtnWatsapp/>
 
